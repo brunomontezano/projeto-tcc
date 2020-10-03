@@ -1,0 +1,580 @@
+\documentclass[chapter=TITLE,oneside,12pt,a4paper,english,brazil]{abntex2} % Opções mais comuns: [12pt,openright,twoside,a4paper,brazil]
+\titulo{EFEITOS DO PREJUÍZO NO SONO NA FUNCIONALIDADE E COGNIÇÃO DE SUJEITOS COM TRANSTORNOS DE HUMOR}
+\autor{BRUNO BRAGA MONTEZANO}
+\instituicao{UNIVERSIDADE CATÓLICA DE PELOTAS}
+\local{Pelotas}
+\orientador[Dra.]{Karen Jansen}
+\preambulo{Projeto de Pesquisa apresentado à Universidade Católica de Pelotas, como parte das exigências para a aprovação na disciplina Trabalho de Conclusão em Psicologia I}
+
+\usepackage[backend=biber,style=abnt,uniquename=init,giveninits,repeatfields]{biblatex} % Citações padrão ABNT
+\addbibresource{ref.bib} % Adicionando arquivo de bibliografia
+\usepackage[utf8]{inputenc} % Pacote necessário quando se utiliza pdflatex
+\usepackage[T1]{fontenc} % Pacote necessário quando se utiliza pdflatex
+\usepackage{indentfirst} % Indenta o primeiro parágrafo de cada seção.
+\usepackage{graphicx} % Pacote para inserir imagens e tabelas
+\usepackage{booktabs} % Pacote para criar tabelas no estilo booktabs
+\usepackage{newtxtext,newtxmath} % Pacotes para utilizar Times
+\usepackage{longtable} % Pacote para criar tabelas de múltiplas páginas
+\usepackage{tabu} % Pacote para flexibilizar tabelas e tabelas longas
+\usepackage{lscape} % Pacote para modo paisagem
+\usepackage{pdfpages} % Pacote para inserir páginas em PDF
+\usepackage{float} % Pacote para flutuar elementos
+\floatstyle{plaintop}
+\restylefloat{table} % Deixa as tabelas flutuantes
+\renewcommand{\familydefault}{\sfdefault} % Modifica fonte padrão do documento
+
+% Modificando indentação e espaçamento entre títulos
+
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\setlength{\afterchapskip}{10pt}
+\setlength{\beforechapskip}{20pt}
+\setlength{\midchapskip}{20pt}
+\setlength{\beforesecskip}{20pt}
+\setlength{\aftersecskip}{10pt}
+
+% Modificando o tamanho da fonte dos capítulos e seções
+
+\renewcommand{\ABNTEXchapterfont}{\normalfont\fontseries{b}\selectfont}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+\renewcommand{\ABNTEXpartfont}{\fontseries{b}\selectfont\selectfont}
+\renewcommand{\ABNTEXpartfontsize}{\normalsize}
+%\renewcommand{\ABNTEXsectionfont}{\normalfont\selectfont}
+\renewcommand{\ABNTEXsectionfont}{\normalfont\fontseries{b}\selectfont}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+%\renewcommand{\ABNTEXsubsectionfont}{\normalfont\fontseries{b}\selectfont}
+\renewcommand{\ABNTEXsubsectionfont}{\normalfont\fontseries{b}\itshape\selectfont}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsectionfont}{\normalfont\selectfont}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsubsectionfont}{\normalfont\itshape\selectfont}
+\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
+
+% Modificando a capa aos padrões da UCPel
+
+\renewcommand{\imprimircapa}{%
+    \begin{capa}%
+        \center
+        \ABNTEXchapterfont\Large\imprimirinstituicao
+
+        \vspace*{1cm}
+
+        {\ABNTEXchapterfont\Large\imprimirautor}
+
+        \vfill
+        \begin{center}
+            \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
+        \end{center}
+        \vfill
+
+        \large\imprimirlocal
+
+        \large{2020}
+
+        \vspace*{1cm}
+    \end{capa}
+}
+
+% Modificando a folha de rosto aos padrões da UCPel
+\makeatletter
+\renewcommand{\folhaderostocontent}{
+\begin{center}
+    {\ABNTEXchapterfont\Large\imprimirautor}
+
+
+    \vspace*{\fill}\vspace*{\fill}
+    \begin{center}
+    \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+    \end{center}
+    \vspace*{\fill}
+
+    \abntex@ifnotempty{\imprimirpreambulo}{%
+        \hspace{.45\textwidth}
+        \begin{minipage}{.5\textwidth}
+            \SingleSpacing
+            \large\imprimirpreambulo
+        \end{minipage}%
+        \vspace*{\fill}
+    }%
+
+    \hfill{\large{Orientadora: \imprimirorientadorRotulo~\imprimirorientador\par}}
+    \abntex@ifnotempty{\imprimircoorientador}{%
+        {\large\imprimircoorientadorRotulo~\imprimircoorientador}%
+    }%
+    \vspace*{\fill}
+
+    \bfseries\large\imprimirlocal
+    \par
+    \bfseries\large{2020}
+    \vspace*{1cm}
+
+\end{center}
+}
+\makeatother
+        
+
+\begin{document}
+
+\imprimircapa
+
+\imprimirfolhaderosto
+
+\pretextualchapter{Identificação}\label{sec:identificacao}
+
+\begin{itemize}
+    \item \textbf{Título:} Efeitos do prejuízo no sono na funcionalidade
+    e cognição de sujeitos com transtornos de humor
+    \item \textbf{Discente:} Bruno Braga Montezano
+    \item \textbf{Orientador:} Prof. Dra. Karen Jansen
+    \item \textbf{Instituição:} Universidade Católica de Pelotas
+    \item \textbf{Centro:} Centro de Ciências da Saúde
+    \item \textbf{Curso:} Psicologia
+    \item \textbf{Data:} Setembro, 2020
+\end{itemize}
+
+\newpage
+\begin{KeepFromToc}
+\tableofcontents
+\end{KeepFromToc}
+\newpage
+
+\begin{resumo}
+
+    Blablablalblalbalbalbalbala
+
+    \vspace{\onelineskip}
+
+    \textbf{Palavras-chave:} transtorno bipolar; qualidade do sono;
+    funcionamento cognitivo; adultos jovens.
+\end{resumo}
+
+\textual
+
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
+
+\chapter{Introdução}\label{sec:introducao}
+
+    O transtorno bipolar (TB) é um transtorno psiquiátrico severo e crônico,
+    caracterizado por episódios depressivos, maníacos e mistos
+    \parencite{american_psychiatric_association_diagnostic_2013}.
+
+\vspace{\onelineskip}
+\chapter{Objetivos}\label{sec:objetivos}
+
+\section{Objetivo Geral}\label{sec:geral}
+
+    \begin{alineas}
+
+        \item Avaliar o efeito da insônia e hipersonia na funcionalidade e
+        cognição de sujeitos com transtornos de humor;
+    \end{alineas}
+
+\section{Objetivos Específicos}\label{sec:especifico}
+
+    \begin{alineas}[resume]
+
+        \item Avaliar a qualidade do sono de sujeitos que converteram para TB
+        quando comparados aos sujeitos com episódio depressivo recorrente ou
+        persistente e sujeitos que apresentaram remissão;
+        \item Comparar o tempo de sono total entre sujeitos que converteram para
+        TB, sujeitos com episódio depressivo recorrente ou persistente e sujeitos
+        que apresentaram remissão;
+        \item Comparar o escore de disfunções cognitivas entre sujeitos que
+        converteram para TB, sujeitos com episódio depressivo recorrente ou
+        persistente e sujeitos que apresentaram remissão;
+        \item Comparar a percepção subjetiva de funcionamento cognitivo entre
+        sujeitos que converteram para TB, sujeitos com episódio depressivo
+        recorrente ou persistente e sujeitos que apresentaram remissão.
+
+    \end{alineas}
+
+\vspace{\onelineskip}
+\chapter{Hipóteses}\label{sec:hipoteses}
+
+    \begin{alineas}
+        \item Os sujeitos bipolares apresentarão uma pior qualidade do sono
+        quando comparados aos sujeitos que apresentam episódio depressivo
+        recorrente ou persistente e sujeitos em remissão;
+        \item Os sujeitos bipolares apresentarão um menor tempo de sono total
+        quando comparados aos sujeitos que apresentam episódio depressivo
+        recorrente ou persistente e sujeitos em remissão;
+        \item Os sujeitos com episódio depressivo recorrente ou persistente
+        apresentarão um maior escore de disfunções cognitivas quando comparados
+        aos sujeitos bipolares;
+        \item Os sujeitos com episódio depressivo recorrente ou persistente
+        apresentarão uma maior incapacidade percebida no domínio de
+        funcionamento cognitivo quando comparados aos sujeitos bipolares.
+    \end{alineas}
+
+\vspace{\onelineskip}
+\chapter{Revisão de Literatura}\label{sec:revisao}
+
+    \section{Estratégias de busca}\label{sec:estrategias}
+
+    Esta revisão de literatura foi elaborada na base de dados do \textit{Pubmed}
+    e da Biblioteca Virtual em Saúde (BVS), ambas no período entre setembro e
+    outubro de 2020.
+    Os descritores utilizados foram: \textit{``bipolar disorder''};
+    \textit{``cognitive functioning''}; \textit{``cognitive impairment''};
+    \textit{``cognitive performance''}; \textit{``depression''};
+    \textit{``hypersomnia''}; \textit{``insomnia''}; \textit{``prodrome''};
+    \textit{``recurrence''}; \textit{``relapse''}; \textit{``sleep dysfunction''};
+    \textit{``sleep quality''}.
+    Os resultados das combinações dos descritores está descrita nas tabelas
+    \ref{tab:pubmed} e \ref{tab:bvs}.
+
+    
+    \begin{table}[H]
+    \resizebox{\textwidth}{!}{%
+        \caption{Descrição das estratégias de buscas na base de dados do \textit{Pubmed}.}
+        \label{tab:pubmed}
+        \begin{tabular}{@{}p{0.4\textwidth}cccc@{}}
+    \toprule
+        \textbf{Combinação dos descritores} & \textbf{Artigos encontrados} & \textbf{Títulos lidos} & \textbf{Resumos lidos} & \textbf{Artigos incluídos} \\ \midrule
+        \textit{sleep quality} \textbf{AND} \textit{cognitive impairment} \textbf{AND} \textit{bipolar disorder} &  18 & 7 & 5 & 4 \\ \midrule
+        \textit{insomnia} \textbf{AND} \textit{cognitive impairment} \textbf{AND} \textit{bipolar disorder} & 16 & 5 & 4 & 4 \\ \midrule
+        \textit{sleep quality} \textbf{AND} \textit{cognitive functioning} \textbf{AND} \textit{bipolar disorder} & 39 & 7 & 5 & 5 \\ \midrule
+        \textit{sleep quality} \textbf{AND} \textit{functioning} \textbf{AND} \textit{bipolar disorder} & 135 & 28 & 17 & 10 \\ \midrule
+        \textit{insomnia} \textbf{AND} \textit{prodrome} \textbf{AND} \textit{bipolar disorder} & 10 & 5 & 4 & 3 \\ \midrule
+        (\textit{insomnia} \textbf{OR} \textit{sleep quality}) \textbf{AND} (\textit{relapse} \textbf{OR} \textit{recurrence}) \textbf{AND} \textit{bipolar disorder} & 81 & 12 & 8 & 2 \\ \midrule
+        (\textit{hypersomnia} \textbf{OR} \textit{insomnia}) \textbf{AND} (\textit{relapse} \textbf{OR} \textit{recurrence}) \textbf{AND} (\textit{bipolar disorder} \textbf{OR} \textit{major depressive disorder}) & 280 & 15 & 9 & 7 \\ \bottomrule
+    \end{tabular}%
+    }
+    \fonte{Próprio Autor}
+    \end{table}
+
+
+    \begin{table}[H]
+    \resizebox{\textwidth}{!}{%
+        \caption{Descrição das estratégias de buscas na base de dados da BVS.}
+        \label{tab:bvs}
+        \begin{tabular}{@{}p{0.4\textwidth}cccc@{}}
+    \toprule
+        \textbf{Combinação dos descritores} & \textbf{Artigos encontrados} & \textbf{Títulos lidos} & \textbf{Resumos lidos} & \textbf{Artigos incluídos} \\ \midrule
+        (\textit{hypersomnia} \textbf{OR} \textit{insomnia}) \textbf{AND} (\textit{relapse} \textbf{OR} \textit{recurrence}) \textbf{AND} (\textit{bipolar disorder} \textbf{OR} \textit{major depressive disorder}) & 49 & 7 & 1 & 1 \\ \midrule
+        (\textit{hypersomnia} \textbf{OR} \textit{insomnia}) \textbf{AND} (\textit{functioning} \textbf{AND} (\textit{bipolar disorder} \textbf{OR} \textit{major depressive disorder}) & 39 & 10 & 2 & 1 \\ \bottomrule
+    \end{tabular}%
+    }
+    \fonte{Próprio Autor}
+    \end{table}
+
+    Com o objetivo de ampliar a inclusão de artigos relacionados ao tema do estudo
+    foram consultadas as referências dos artigos selecionados durante a busca, e
+    dessa forma, foram incluídos mais 4 artigos nesta revisão de literatura.
+
+    \section{Corpo da revisão}\label{sec:corporevisao}
+
+\vspace{\onelineskip}
+\chapter{Método}\label{sec:metodo}
+
+\section{Delineamento}\label{sec:delineamento}
+
+    Trata-se de um estudo de coorte prospectivo, em que a primeira fase ocorreu
+    entre os anos de 2012 e 2015, onde foram avaliados 585 indivíduos no
+    \textit{baseline} com idade entre 18 e 60 anos.
+    Entre 2017 e 2018 aconteceu a segunda fase do estudo em que 468 indivíduos
+    foram reavaliados.
+
+\section{Amostra}\label{sec:sujeitos}
+
+    \subsection{População alvo}
+
+    Sujeitos que buscaram atendimento no Ambulatório de Pesquisa e Extensão
+    em Saúde Mental da Universidade Católica de Pelotas, com idade entre 18
+    e 60 anos, que preencheram critérios para o diagnóstico de transtorno
+    depressivo maior na primeira fase do estudo, e apresentaram remissão,
+    episódio depressivo recorrente ou conversão para TB.
+
+   \subsection{Amostragem} 
+    
+    A amostra foi selecionada por conveniência. O estudo foi divulgado na mídia
+    local e em serviços de saúde do município, e a partir da divulgação,
+    os participantes que chegavam ao ambulatório eram avaliados por psicólogos
+    capacitados para realizar a entrevista clínica diagnóstica.
+
+    \subsection{Critérios de elegibilidade}
+
+    Critérios de inclusão:
+    \begin{itemize}
+        \item Ter entre 18 e 60 anos na primeira fase do estudo;
+        \item Ser diagnosticado com TDM pela equipe da pesquisa,
+        através da MINI na primeira fase, e apresentar remissão,
+        episódio depressivo recorrente ou conversão para TB na segunda fase;
+    \end{itemize}
+
+    Critérios de exclusão:
+    \begin{itemize}
+        \item Uso abusivo de substâncias psicoativas ilícitas;
+        \item Incapacidade de entender os instrumentos da pesquisa.
+        \item Apresentar risco de suicídio moderado ou grave.
+    \end{itemize}
+
+\section{Definição das variáveis}\label{sec:variaveis}
+
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\caption{Descrição das variáveis, instrumento utilizado para coleta, classificação e tipo}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Variável} & \textbf{Coleta de dados} & \textbf{Classificação} & \textbf{Tipo de variável} \\ \midrule
+Transtorno Bipolar & MINI & Sim/Não & Dicotômica \\ \midrule
+Episódio Depressivo Atual & MINI & Sim/Não & Dicotômica \\ \midrule
+Sexo & Questionário Sociodemográfico & Masculino/Feminino & Dicotômica \\ \midrule
+Idade & Questionário Sociodemográfico & Anos Inteiros & Quantitativa Discreta \\ \midrule
+Percepção Subjetiva da Cognição & COBRA & Escore total & Quantitativa Discreta \\ \midrule
+Cognição Objetiva & WAIS & Escore bruto & Quantitativa Discreta\\ \midrule
+Funcionamento Global & FAST & Escore total & Quantitativa Discreta \\ \midrule
+Qualidade Geral do Sono & PSQI & Escore total & Quantitativa Discreta \\ \midrule
+Insônia ou Hipersonia & MINI & Sim/Não & Dicotômica \\ \bottomrule
+\end{tabular}%
+}
+\fonte{Próprio Autor}
+\end{table}
+
+\section{Instrumentos}\label{sec:instrumentos}
+
+    \subsection{\textit{Mini-International Neuropsychiatric Interview} (MINI)}\label{sec:mini}
+
+        Os transtornos de humor foram avaliados através da
+        \textit{Mini-International Neuropsychiatric Interview}
+        \parencite{sheehan_mini-international_1998}.
+        A MINI é uma entrevista diagnóstica estruturada,
+        baseada nos critérios do DSM-IV e do CID-10,
+        desenvolvida em conjunto por psiquiatras e clínicos da Europa e Estados Unidos,
+        que é destinada para a prática clínica, pesquisa em atenção primária
+        e na psiquiatria.
+        Sendo administrada em um curto período de tempo (aproximadamente 15 minutos),
+        foi desenvolvida para suprir a necessidade de uma entrevista psiquiátrica
+        estruturada curta mas também precisa.
+
+        A entrevista foi traduzida para o português brasileiro por
+        \textcite{amorim_mini_2000} e tem sido utilizada no contexto
+        brasileiro, por exemplo em estudos na atenção primária
+        \parencite{de_azevedo_marques_validity_2008}.
+
+    \subsection{\textit{Pittsburgh Sleep Quality Index} (PSQI)}\label{sec:psqi}
+
+        A avaliação da qualidade do sono foi realizada através da
+        \textit{Pittsburgh Sleep Quality Index}, que consiste de 19 questões
+        auto-avaliadas pelo sujeito e 5 questões respondidas pelo parceiro de
+        quarto ou cama. 
+        As 19 questões são categorizadas em 7 componentes, que vão de um score
+        de 0 a 3.
+        \parencite{bertolazi_validation_2011}
+
+        Os componentes da PSQI são: qualidade subjetiva do sono (C1),
+        latência do sono (C2), duração do sono (C3),
+        eficiência do sono habitual (C4), distúrbios do sono (C5),
+        uso de medicamentos para dormir (C6) e disfunção diurna (C7).
+
+        A soma dos 7 componentes entrega um escore global, que vai de 0 a 21,
+        considerando que quanto maior o escore, pior a qualidade do sono.
+        Um escore global da PSQI maior que 5 indica grandes dificuldades
+        em pelo menos 2 componentes ou dificuldades moderadas em mais de 3 componentes.
+
+
+    \subsection{\textit{Cognitive Complaints in Bipolar Disorder Rating Assesment} (COBRA)}\label{sec:cobra}
+
+    A medida de cognição subjetiva foi avaliada a partir da
+    \textit{Cognitive Complaints in Bipolar Disorder Rating Assesment}
+    que consiste de 16 itens auto-relatados, formados pelos seguintes domínios:
+    funcionamento executivo, velocidade de processamento, memória de trabalho,
+    memória e aprendizado verbal, atenção/concentração e rastreamento mental.
+
+    Todos os itens são avaliados usando uma escala de 4 pontos
+    (0 = nunca; 1 = as vezes; 2 = frequentemente; 3 = sempre).
+    O escore total é obtido somando os escores de todos os itens.
+    Quanto maior o escore, maior o número de disfunções cognitivas subjetivas.
+    A escala foi traduzida e validada para pacientes bipolares brasileiros
+    por \textcite{lima_validity_2018}
+
+    \subsection{\textit{Functional Assesment Short Test} (FAST)}\label{sec:fast}
+
+    A FAST é uma entrevista constituída de 24 itens construída para avaliar
+    áreas prejudicadas no TB, traduzida e validada para pacientes brasileiros
+    por \textcite{cacilhas_validity_2009}.
+    Engloba áreas como: autonomia, que se refere a capacidade do paciente de
+    fazer coisas sozinho e tomar suas próprias decisões; funcionamento
+    ocupacional que se refere a capacidade de manter-se em um trabalho
+    remunerado, eficiência na execução de tarefas no trabalho, trabalhar
+    no campo em que o paciente foi educado e ganhar de acordo com seu cargo
+    no trabalho; funcionamento cognitivo, que está relacionado a habilidade
+    de concentrar-se, efetuar cálculos mentais simples, resolver problemas,
+    aprender novas informações e lembrar das informações aprendidas; problemas
+    financeiros, que envolve a capacidade de gerenciar as finanças e gastar de
+    forma equilibrada; relacionamento interpessoal, que refere-se as relações
+    com amigos, família, envolvimento em atividades sociais, relações sexuais,
+    e a habilidade de defender ideias e opiniões; tempo de lazer, que se refere
+    a capacidade de realizar atividades físicas (esportes, exercícios) e o prazer
+    obtido por \textit{hobbies}.
+
+    Os escores são determinados pela soma dos itens, que variam de
+    0 (indicando nenhum problema) a 3 indicando limitação severa)
+    nos 15 dias anteriores a avaliação.
+    Maiores escores correspondem a um maior prejuízo funcional,
+    tanto no escore global da escala quanto nos domínios avaliados.
+
+    \subsection{Subteste da \textit{Wechsler Adult Intelligence Scale} (WAIS)}\label{sec:wais}
+
+    A medida de cognição objetiva foi avaliada a partir do subteste suplementar da WAIS
+    chamado Sequência de Números e Letras. Neste subteste, o examinador lê uma série
+    de números e letras, e o indivíduo repete primeiramente os números, em ordem
+    crescente, e então as letras, em ordem alfabética.
+
+    Apesar de não haver limite de tempo para o sujeito responder, o examinador lê
+    cada número ou letra na taxa de um número por segundo. A Sequência de Números
+    e Letras mede memória de trabalho, manipulação mental, atenção, concentração,
+    e memória auditiva de curto prazo. \parencite{wechsler_wais_2004}
+
+\section{Coleta de dados}\label{sec:coleta}
+
+    A coleta dos dados foi realizada por psicólogos e bolsistas de iniciação
+    científica do Programa de Pós-Graduação em Saúde e Comportamento da
+    Universidade Católica de Pelotas.
+    Os psicólogos ficaram responsáveis pela avaliação
+    diagnóstica e os bolsistas pelo restante das escalas.
+
+\section{Processamento e análise de dados}\label{sec:analise}
+
+    Os dados foram coletados através do aplicativo \textit{Open Data Kit Collect}
+    na versão 1.1.7, em tablets, e posteriormente transferidos para uma planilha
+    eletrônica. Para análise dos dados estatísticos será utilizado o
+    \textit{software} SPSS 25.0. Continua...
+
+\section{Cronograma}\label{sec:cronograma}
+
+\begin{table}[H]
+    \resizebox{\textwidth}{!}{%
+    \caption{Cronograma do Projeto em Meses}
+    \label{tab:cronograma}
+    \begin{tabular}{lcccccccccccc}  
+    \toprule
+    \textbf{Atividades} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} & \textbf{11} & \textbf{12} \\
+    \midrule
+        Revisão de Literatura & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ \\
+        Elaboração do projeto & $\bullet$ & $\bullet$ & $\bullet$ & & & & & & & & & \\
+        Coleta de dados & & & & $\bullet$ & & & & & & & & \\
+        Defesa do Projeto & & & & & $\bullet$ & & & & & & & \\
+        Processamento dos dados & & & & & $\bullet$ & & & & & & & \\
+        Análise dos dados & & & & & $\bullet$ & & & & & & & \\
+        Redação do Artigo & & & & & & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & \\
+        Defesa do Artigo & & & & & & & & & & & & $\bullet$ \\
+    \bottomrule
+    \end{tabular}%
+    }
+    \fonte{Próprio Autor}
+\end{table}%
+
+\section{Orçamento}\label{sec:orcamento}
+
+    O presente projeto não apresentará custos adicionais para sua implementação
+    visto que utilizará infraestrutura pessoal e tecnológica já adquirida através
+    de projetos de pesquisa anteriores.
+
+\section{Aspectos éticos}\label{sec:aspectoseticos}
+
+    O presente estudo foi aprovado pelo Comitê de Ética em Pesquisa da UCPel,
+    sob o registro de número 502.604. Todos os participantes da pesquisa assinaram
+    um termo de consentimento livre e esclarecido antes de participarem do estudo.
+    Conforme a avaliação realizada pelos psicólogos, os pacientes foram encaminhados
+    para atendimento psicológico no Ambulatório de Pesquisa e Extensão em Saúde Mental
+    (APESM), quando não se enquadraram nos critérios de inclusão do ambulatório foram
+    encaminhados para serviços de saúde municipais.
+
+\endgroup
+
+\postextual
+
+\printbibliography
+
+\anexos
+
+\begin{anexosenv}
+
+    \begin{landscape}
+    \chapter{Tabela de Revisão}
+            \noindent
+            \begin{longtabu} to \linewidth{@{}p{0.10\linewidth}p{0.18\linewidth}p{0.30\linewidth}p{0.24\linewidth}p{0.12\linewidth}}
+\toprule
+\textbf{Autor, ano e revista} & \textbf{Objetivo} & \textbf{Método (delineamento, amostra, instrumentos...)} & \textbf{Principais resultados} & \textbf{Comentários} \\ \midrule
+\endfirsthead
+%
+\midrule
+\endhead
+%
+    \textcite{zanini_abnormalities_2015}, \textit{Schizophrenia Research} &
+    Comparar os padrões de sono e a presença de perturbações no sono em indivíduos em estados mentais de risco para psicose e TB com um grupo controle saudável &
+    Caso-controle, 20 sujeitos em estado mental de risco para psicose ou TB, instrumentos: PSQI, \textit{Epworth Sleepiness Scale}, QME, Polissonografia, CAARMS &
+    75\% dos sujeitos em estado mental de risco apresentaram escore > 5 na PSQI (sono de baixa qualidade), em relação aos 30\% no grupo dos controles saudáveis (p = 0.007) &
+Estado mental de risco: sintomas maníacos, depressão e características ciclotímicas ou risco genético \\ \midrule
+    \textcite{boland_associations_2015}, \textit{Psychiatry Research} &
+    Examinar o papel das perturbações do sono e funcionamento cognitivo na deficiência ocupacional no TB &
+    Caso-controle, 24 adultos (18 a 24 anos), 24 sujeitos com TB tipo I ou II e 24 sujeitos sem histórico de transtornos de humor ou sono. Instrumentos: ISI, PSQI, actigrafia, entrevista clínica não estruturada, KBIT-II, Subteste Stroop da DKEFS, Torre de Londres, CVLT-II, Subteste da extensão de dígitos da \textit{Wechsler Memory Scale}, Questionário de Desempenho no Trabalho, SADS-L, GBI, BDI-II, ASRM &
+    Sujeitos com TB apresentaram sono pior que os controles em 5 dos 12 itens, especialmente nos sintomas auto-relatados de perturbações do sono (p = 0.02). Bipolares apresentaram pior desempenho no teste de aprendizado verbal, sequência de dígitos, e no subteste Stroop (p = 0.02) &
+ \\ \midrule
+    \textcite{pancheri_systematic_2019}, \textit{European Psychiatry} &
+    Realizar uma revisão sistemática atualizada nas evidências de um possível papel das alterações no sono predizendo o início do TB &
+    PRISMA (\textit{Preferred Reporting Items for Systematic Reviews and Meta-Analyses)}, estudos incluídos forarm: estudos prospectivos em filhos de pacientes bipolares, posteriormente diagnosticados com TB; estudos prospectivos em pacientes com problemas no sono que desenvolveram TB; estudos retrospectivos em problemas do sono em bipolares. 17 estudos incluídos &
+    Insônia parece um pródromo importante para o TB em 2 estudos prospectivos. Sono perturbado em participantes sem transtorno mental no primeiro tempo apontaram para um risco aumentado para início do TB. Hipersonia pode ajudar a diferenciar depressão bipolar e unipolar &
+ \\ \midrule
+    \textcite{samalin_residual_2017}, \textit{Journal of Affective Disorders} &
+    Examinar um modelo abrangente baseado em modelagem de equação estrutural (SEM) que integra as interrelações entre sintomas depressivos residuais, perturbações do sono e comprometimento cognitivo autorrelatado como determinantes do funcionamento psicossocial em uma amostra de pacientes eutímicos de TB em condições da vida real &
+    Transversal, 468 pacientes externos adultos com TB. Instrumentos: BDRS, PSQI, FAST, Escala Visual Analógica (VAS) &
+    Sintomas depressivos residuais foram moderadamente associados com todos domínios de funcionamento exceto funcionamento ocupacional (r de 0.17 a 0.40). Perturbações do sono, medidas pela PSQI, não foram significativamente associadas com domínios da FAST, exceto pelo escore de disfunção diurna da PSQI e os subescores de autonomia, funcionamento cognitivo e tempo de lazer da FAST (associação moderada; r de 0.20 a 0.28)
+ \\ \midrule
+    \textcite{melo_sleep_2016}, \textit{Journal of Psychiatric Research} &
+    Realizar uma revisão sistemática para definir as evidências atuais sobre sono e alterações de ritmo em pessoas em risco para o TB e avaliar sono e distúrbios circadianos como fatores de risco para TB &
+    PRISMA. Palavras-chave: `\textit{sleep}' or `\textit{rhythm}' or `\textit{circadian}' AND `\textit{bipolar disorder}' or `\textit{mania}' or `\textit{bipolar depression}' AND `\textit{high-risk}' or `\textit{risk}'. Descartaram estudos que não incluíam indivíduos em risco ou não os analisaram separadamente &
+    Maioria dos estudos mostraram mais problemas no sono em pessoas em risco do que controles (medidas subjetivas e objetivas). Uma associação entre alto risco para TB e má qualidade do sono foi identificada em participantes com risco clínico. Estudo de base populacional sugere má qualidade do sono como fator preditor para TB &
+ \\ \midrule
+    \textcite{harvey_sleep_2009}, \textit{Clinical Psychology} &
+    Destacar a importância do ciclo sono-vigília no transtorno bipolar &
+    Revisão da Literatura &
+    Um estudo viu qe entre os bipolares, as perturbações no sono foi o pródromo mais comum para mania, e sexto mais comum pródromo para depressão. Correlações significativas entre menor duração de sono e maiores sintomas maníacos no dia seguinte. Foram claramente demonstrados efeitos adversos da privação do sono no funcionamento cognitivo &
+    Poucas informações sobre metodologia do estudo \\ \midrule
+    \textcite{kanady_association_2017}, \textit{Journal of Psychiatric Research} &
+    Examinar a associação entre sono e cognição durante o transtorno bipolar inter-episódios usando métodos de medida padrão e uma manipulação terapêutica do sono &
+    Longitudinal (oito semanas), 47 adultos com transtorno bipolar com um diagnóstico de insônia comórbido e 19 adultos com transtorno bipolar sem perturbações no sono nos últimos 6 meses. Instrumentos: SCID, IDS-C, YMRS e Registro de Rastreamento de Farmacoterapia &
+    Maior variabilidade no tempo de sono total predizeu pior memória de trabalho e desempenho de aprendizado verbal. Melhora no sono foi associada com uma melhora na cognição seguindo Terapia Cognitivo Comportamental para Insônia - TB &
+ \\ \midrule
+    \textcite{ritter_characteristics_2012}, \textit{Journal of Neural Transmission} &
+    Explorar as características do sono objetivas, subjetivas e ao longo da vida de pacientes com TB manifesto e pessoas com elevado risco de desenvolver a doença &
+    Transversal, 3 grupos (pacientes com TB, pessoas com alto risco para TB e controles saudáveis. Instrumentos: BIPS-Q e actimetria &
+    Pacientes bipolares e de alto risco expressaram episódios curtos de insônia e hipersonia mais frequentemente. Também relataram ter episódios mais frequentes da diminuição da necessidade do sono. Bipolares tiveram significativamente maior duração de sono e latência do sono &
+                Pessoas em risco: parente de 1\textsuperscript{o} ou 2\textsuperscript{o} grau com TB, TDM ou transtorno esquizoafetivo e sintomas de humor sublimiar\\ \midrule
+    \textcite{russo_relationship_2015}, \textit{Journal of Affective Disorders} &
+    Examinar a associação entre disfunção do sono e neurocognição no transtorno bipolar &
+    Transversal, 117 sujeitos com TB. Instrumentos para neurocognição: MCCB (desempenho neurocognitivo), ESS e PSQI (avaliação do sono) &
+    Sujeitos com TB comparados ao padrão da população norte-americana relataram deficiência severa nas subescalas da PSQI de disfunção diurna e distúrbios do sono com um nível de qualidade do sono geral muito abaixo da média da população saudável. Associações significativas entre desempenho cognitivo e perturbações do sono &
+ \\ \midrule
+    \textcite{ritter_role_2011}, \textit{Bipolar Disorders} &
+    Revisar sistematicamente a literatura em que perturbações do sono precoce e posterior transtorno bipolar são relatados em uma relação temporal &
+    ISI - \textit{Web of Science}, também foram utilizadas as seções de referências dos estudos relevantes. Estudos prospectivos que acompanhavam filhos de pais com TB, estudos prospectivos que acompanhavam pacientes com diagnóstico de insônia e sono perturbado, e estudos retrospectivos em pacientes com diagnóstico de TB, examinando a psicopatologia incluindo o sono como preditor &
+    A maioria dos estudos confirmam uma associação longitudinal entre perturbações no sono e o desenvolvimento subsequente do TB. Numerosos estudos prospectivos confirmaram que a insônia frequentemente prediz transtornos de humor e transmite um risco aumentado para episódios depressivos a curto, médio e longo prazo &
+ \\ \midrule
+    \textcite{chung_risk_2015}, \textit{Journal of Clinical Sleep Medicine} &
+    Explorar se pacientes com insônia e prescrições de medicamentos hipnótico-sedativos exibem um maior risco de desenvolver transtornos psiquiátricos comparado àqueles com insônia mas sem a prescrição dos medicamentos e àqueles sem insônia nem medicamentos fazendo um \textit{follow-up} de 6 anos &
+    Longitudinal, 30670 sujeitos, 3 grupos (Inso-Hyp, Inso-NonHyp, NonInso, NonHyp) &
+    O grupo com insônia e prescrição dos medicamentos apresentou maiores riscos de desenvolver transtornos psiquiátricos comparado aos outros dois grupos, especialmente no transtorno bipolar &
+Sem informações sobre instrumentos \\ \midrule
+    \textcite{ritter_disturbed_2015}, \textit{Journal of Psychiatric Research} &
+    Abordar a relação longitudinal entre sono perturbado em indivíduos saudáveis e o início subsequente  do transtorno bipolar &
+    Amostra do \textit{Early Developmental Stages of Psychopathology Study} (EDSP), T0 ao T3, amostra original de 3021 sujeitos. Instrumentos: \textit{Munich-Composite International Diagnostic Interview} (DIA-X/M-CIDI), SCL-90 &
+Sono perturbado em participantes sem um transtorno mental importante no T0 conferiram um risco aumentado para o posterior início do TB (p = 0.001) e início do transtorno depressivo maior (p = 0.006) &
+ \\ \midrule
+ &
+ &
+ &
+ &
+ \\ \bottomrule
+\end{longtabu}
+    \end{landscape}
+
+                \chapter{Termo de Consentimento Livre e Esclarecido}
+
+\end{anexosenv}
+
+
+\end{document}
