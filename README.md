@@ -5,7 +5,8 @@
 Esse repositório contém o código em LaTeX do Projeto do Trabaho de Conclusão em Psicologia do acadêmico Bruno Montezano, e ainda:
 
 - O arquivo de bibliografia em extensão bib;
-- O arquivo de saída em pdf.
+- A apresentação de slides do trabalho;
+- Os arquivos de saída em pdf.
 
 ## Dúvidas
 
