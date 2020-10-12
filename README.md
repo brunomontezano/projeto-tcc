@@ -22,7 +22,7 @@ editor de texto. Existem alternativas online como Overleaf, etc.
 Mas eu sou um amante das ferramentas offline, e acabo utilizando
 o editor de texto [Vim](https://www.vim.org) para escrever meu código, e eu adoro ele!
 
-### Mas eu consigo usar as regras da ABNT com esse negócio aí?
+### Mas eu consigo usar as regras da ABNT escrevendo em LaTeX?
 
 Claro! Você pode utilizar um pacote chamado [abnTeX2](abntex.net.br)
 que traz diversas facilidades para quem necessita escrever seu
@@ -36,7 +36,7 @@ precisa seguir as regrinhas!
 ### Como criar um arquivo .bib?
 
 Você pode utilizar algum gerenciador de referências como [Zotero](https://www.zotero.org/)
-(eu particularmente utilizo)ou Mendeley, e assim organizar e adicionar os
+(eu particularmente utilizo) ou Mendeley, e assim organizar e adicionar os
 artigos e livros que você vai utilizar para sua bibliografia e então
 exportar sua "biblioteca" para um arquivo BibTeX que você pode manusear
 a partir da sintaxe do LaTeX posteriormente.
