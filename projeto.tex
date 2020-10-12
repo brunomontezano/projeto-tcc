@@ -19,6 +19,7 @@
 \usepackage{lscape} % Pacote para modo paisagem
 \usepackage{pdfpages} % Pacote para inserir páginas em PDF
 \usepackage{float} % Pacote para flutuar elementos
+\usepackage[font=sf]{caption} % Legenda com fonte sem serifa
 \floatstyle{plaintop}
 \restylefloat{table} % Deixa as tabelas flutuantes
 \renewcommand{\familydefault}{\sfdefault} % Modifica fonte padrão do documento
@@ -237,7 +238,7 @@
     
     \begin{table}[H]
     \resizebox{\textwidth}{!}{%
-        \caption{Descrição das estratégias de buscas na base de dados do \textit{Pubmed}.}
+        \caption{Descrição das estratégias de buscas na base de dados do \textit{Pubmed}}
         \label{tab:pubmed}
         \begin{tabular}{@{}p{0.4\textwidth}cccc@{}}
     \toprule
@@ -259,7 +260,7 @@
 
     \begin{table}[H]
     \resizebox{\textwidth}{!}{%
-        \caption{Descrição das estratégias de buscas na base de dados da BVS.}
+        \caption{Descrição das estratégias de buscas na base de dados da BVS}
         \label{tab:bvs}
         \begin{tabular}{@{}p{0.4\textwidth}cccc@{}}
     \toprule
