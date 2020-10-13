@@ -52,3 +52,16 @@ Neste trabalho em específico, acabei utilizando longtable, tabu, etc.
 
 Você pode acessar o site Tables Generator clicando [aqui](https://www.tablesgenerator.com/).
 
+## Ambiente de Desenvolvimento
+
+- SO: Arch Linux
+- Editor de texto: Neovim
+- Distribuição: TeXLive
+- Script para compilação: [No meu repositório de configurações](https://github.com/brunomontezano/dotfiles/blob/master/.local/bin/compiler)
+
+
+## Contato
+
+Qualquer dúvida, entrar em contato pelo e-mail:
+
+bruno.montezano@sou.ucpel.edu.br
