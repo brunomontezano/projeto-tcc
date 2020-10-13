@@ -1,9 +1,17 @@
+% --------------------------------------------------------------------------------
+% --------------------------------------------------------------------------------
+% Projeto de Pesquisa realizado para Conclusão da Graduação em Psicologia
+% Acadêmico: Bruno Braga Montezano
+% Baseia-se no documento modelo de Projeto de Pesquisa do abnTeX2
+% --------------------------------------------------------------------------------
+% --------------------------------------------------------------------------------
+
 \documentclass[chapter=TITLE,oneside,12pt,a4paper,english,brazil]{abntex2} % Opções mais comuns: [12pt,openright,twoside,a4paper,brazil]
-\titulo{EFEITOS DO PREJUÍZO NO SONO NA FUNCIONALIDADE E COGNIÇÃO DE SUJEITOS COM TRANSTORNOS DE HUMOR}
-\autor{BRUNO BRAGA MONTEZANO}
-\instituicao{UNIVERSIDADE CATÓLICA DE PELOTAS}
+\titulo{Efeitos do prejuízo no sono na funcionalidade e cognição de sujeitos com transtornos de humor}
+\autor{Bruno Braga Montezano}
+\instituicao{Universidade Católica de Pelotas}
 \local{Pelotas}
-\orientador[Dra.]{Karen Jansen}
+\orientador[Prof\textsuperscript{a}. Dra.]{Karen Jansen}
 \preambulo{Projeto de Pesquisa apresentado à Universidade Católica de Pelotas, como parte das exigências para a aprovação na disciplina Trabalho de Conclusão em Psicologia I}
 
 \usepackage[backend=biber,style=abnt,uniquename=init,giveninits,repeatfields]{biblatex} % Citações padrão ABNT
@@ -22,9 +30,9 @@
 \usepackage[font=sf]{caption} % Legenda com fonte sem serifa
 \usepackage{microtype} % Melhorar aparência sem obstrução visual
 \urlstyle{same} % URLs com mesma fonte do corpo do texto
-\floatstyle{plaintop}
+\floatstyle{plaintop} % Força legenda das tabelas no topo
 \restylefloat{table} % Deixa as tabelas flutuantes
-\renewcommand{\familydefault}{\sfdefault} % Modifica fonte padrão do documento
+\renewcommand{\familydefault}{\sfdefault} % Modifica fonte padrão do documento para sem serifa
 
 % Modificando indentação e espaçamento entre títulos
 
@@ -58,15 +66,15 @@
 \renewcommand{\imprimircapa}{%
     \begin{capa}%
         \center
-        \ABNTEXchapterfont\Large\imprimirinstituicao
+        \ABNTEXchapterfont\Large\MakeUppercase\imprimirinstituicao
 
         \vspace*{1cm}
 
-        {\ABNTEXchapterfont\Large\imprimirautor}
+        {\ABNTEXchapterfont\Large\MakeUppercase\imprimirautor}
 
         \vfill
         \begin{center}
-            \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
+            \ABNTEXchapterfont\bfseries\LARGE\MakeUppercase\imprimirtitulo
         \end{center}
         \vfill
 
@@ -82,12 +90,12 @@
 \makeatletter
 \renewcommand{\folhaderostocontent}{
 \begin{center}
-    {\ABNTEXchapterfont\Large\imprimirautor}
+    {\ABNTEXchapterfont\Large\MakeUppercase\imprimirautor}
 
 
     \vspace*{\fill}\vspace*{\fill}
     \begin{center}
-    \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+    \ABNTEXchapterfont\bfseries\Large\MakeUppercase\imprimirtitulo
     \end{center}
     \vspace*{\fill}
 
@@ -125,11 +133,10 @@
 \pretextualchapter{Identificação}\label{sec:identificacao}
 
 \begin{itemize}
-    \item \textbf{Título:} Efeitos do prejuízo no sono na funcionalidade
-    e cognição de sujeitos com transtornos de humor
-    \item \textbf{Discente:} Bruno Braga Montezano
-    \item \textbf{Orientador:} Prof. Dra. Karen Jansen
-    \item \textbf{Instituição:} Universidade Católica de Pelotas
+    \item \textbf{Título:} \imprimirtitulo
+    \item \textbf{Discente:} \imprimirautor
+    \item \textbf{Orientador:} \imprimirorientadorRotulo~\imprimirorientador
+    \item \textbf{Instituição:} \imprimirinstituicao
     \item \textbf{Centro:} Centro de Ciências da Saúde
     \item \textbf{Curso:} Psicologia
     \item \textbf{Data:} Setembro, 2020
