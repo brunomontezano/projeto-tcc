@@ -54,9 +54,9 @@ Você pode acessar o site Tables Generator clicando [aqui](https://www.tablesgen
 
 ## Ambiente de Desenvolvimento
 
-- SO: Arch Linux
-- Editor de texto: Neovim
-- Distribuição: TeXLive
+- SO: [Arch Linux](https://www.archlinux.org/)
+- Editor de texto: [Neovim](https://neovim.io/)
+- Distribuição: [TeXLive](https://tug.org/texlive/)
 - Script para compilação: [No meu repositório de configurações](https://github.com/brunomontezano/dotfiles/blob/master/.local/bin/compiler)
 
 
