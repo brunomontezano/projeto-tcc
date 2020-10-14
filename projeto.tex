@@ -6,33 +6,71 @@
 % --------------------------------------------------------------------------------
 % --------------------------------------------------------------------------------
 
-\documentclass[chapter=TITLE,oneside,12pt,a4paper,english,brazil]{abntex2} % Opções mais comuns: [12pt,openright,twoside,a4paper,brazil]
-\titulo{Efeitos do prejuízo no sono na funcionalidade e cognição de sujeitos com transtornos de humor}
-\autor{Bruno Braga Montezano}
-\instituicao{Universidade Católica de Pelotas}
-\local{Pelotas}
-\orientador[Prof\textsuperscript{a}. Dra.]{Karen Jansen}
-\preambulo{Projeto de Pesquisa apresentado à Universidade Católica de Pelotas, como parte das exigências para a aprovação na disciplina Trabalho de Conclusão em Psicologia I}
+% ------------------------
+% Preâmbulo do Documento
+% ------------------------
 
-\usepackage[backend=biber,style=abnt,uniquename=init,giveninits,repeatfields]{biblatex} % Citações padrão ABNT
-\addbibresource{ref.bib} % Adicionando arquivo de bibliografia
-\usepackage[utf8]{inputenc} % Suporte para codificação UTF-8
-\usepackage[T1]{fontenc} % Suporte para codificação de fonte T1
-\usepackage{indentfirst} % Indenta o primeiro parágrafo de cada seção
-\usepackage{graphicx} % Pacote para inserir imagens e tabelas
-\usepackage{booktabs} % Pacote para criar tabelas no estilo booktabs
-\usepackage{newtxtext,newtxmath} % Pacotes para utilizar Times
-\usepackage{longtable} % Pacote para criar tabelas de múltiplas páginas
-\usepackage{tabu} % Pacote para flexibilizar tabelas e tabelas longas
-\usepackage{lscape} % Pacote para modo paisagem
-\usepackage{pdfpages} % Pacote para inserir páginas em PDF
-\usepackage{float} % Pacote para flutuar elementos
-\usepackage[font=sf]{caption} % Legenda com fonte sem serifa
-\usepackage{microtype} % Melhorar aparência sem obstrução visual
-\urlstyle{same} % URLs com mesma fonte do corpo do texto
-\floatstyle{plaintop} % Força legenda das tabelas no topo
-\restylefloat{table} % Deixa as tabelas flutuantes
-\renewcommand{\familydefault}{\sfdefault} % Modifica fonte padrão do documento para sem serifa
+\documentclass[chapter=TITLE,
+               oneside,
+               12pt,
+               a4paper,
+               english,
+               brazil]{abntex2}    % Opções comuns: [openright,twoside,a4paper,brazil]
+
+\titulo{Efeitos do prejuízo no sono na
+        funcionalidade e cognição de
+        sujeitos com transtornos de humor}
+
+\autor{Bruno Braga Montezano}
+
+\instituicao{Universidade Católica de Pelotas}
+
+\local{Pelotas}
+
+\orientador[Prof\textsuperscript{a}. Dra.]{Karen Jansen}
+
+\preambulo{Projeto de Pesquisa apresentado à
+           Universidade Católica de Pelotas,
+           como parte das exigências para a aprovação na
+           disciplina Trabalho de Conclusão em Psicologia I}
+
+% ---------------------------------
+% Pacotes Utilizados no Trabalho
+% ---------------------------------
+
+\usepackage[backend=biber,
+            style=abnt,
+            uniquename=init,
+            giveninits,
+            repeatfields]{biblatex} % Citações padrão ABNT
+\addbibresource{ref.bib}            % Adicionando arquivo de bibliografia
+
+\usepackage[utf8]{inputenc}         % Suporte para codificação UTF-8
+\usepackage[T1]{fontenc}            % Suporte para codificação de fonte T1
+
+\usepackage{indentfirst}            % Indenta o primeiro parágrafo de cada seção
+
+\usepackage{graphicx}               % Pacote para inserir imagens e tabelas
+\usepackage{booktabs}               % Pacote para criar tabelas no estilo booktabs
+\usepackage{newtxtext,newtxmath}    % Pacotes para utilizar Times
+\usepackage{longtable}              % Pacote para criar tabelas de múltiplas páginas
+\usepackage{tabu}                   % Pacote para flexibilizar tabelas e tabelas longas
+\usepackage{lscape}                 % Pacote para modo paisagem
+\usepackage{pdfpages}               % Pacote para inserir páginas em PDF
+\usepackage[font=sf]{caption}       % Legenda com fonte sem serifa
+\usepackage{microtype}              % Melhorar aparência sem obstrução visual
+\usepackage{float}                  % Pacote para flutuar elementos
+    \floatstyle{plaintop}           % Força legenda das tabelas no topo
+    \restylefloat{table}            % Deixa as tabelas flutuantes
+
+% -------------------------------------
+% Modificações na Classe de Documento
+% -------------------------------------
+
+% Modificando fonte do documento para fonte sem serifa
+
+\renewcommand{\familydefault}{\sfdefault} % Fonte padrão do documento para sem serifa
+\urlstyle{same}                           % URLs com mesma fonte do corpo do texto
 
 % Modificando indentação e espaçamento entre títulos
 
@@ -87,6 +125,7 @@
 }
 
 % Modificando a folha de rosto aos padrões da UCPel
+
 \makeatletter
 \renewcommand{\folhaderostocontent}{
 \begin{center}
@@ -122,7 +161,10 @@
 \end{center}
 }
 \makeatother
-        
+
+% ---------------------
+% Início do Documento
+% ---------------------
 
 \begin{document}
 
@@ -132,15 +174,15 @@
 
 \pretextualchapter{Identificação}\label{sec:identificacao}
 
-\begin{itemize}
-    \item \textbf{Título:} \imprimirtitulo
-    \item \textbf{Discente:} \imprimirautor
-    \item \textbf{Orientador:} \imprimirorientadorRotulo~\imprimirorientador
-    \item \textbf{Instituição:} \imprimirinstituicao
-    \item \textbf{Centro:} Centro de Ciências da Saúde
-    \item \textbf{Curso:} Psicologia
-    \item \textbf{Data:} Setembro, 2020
-\end{itemize}
+    \begin{itemize}
+        \item \textbf{Título:} \imprimirtitulo
+        \item \textbf{Discente:} \imprimirautor
+        \item \textbf{Orientador:} \imprimirorientadorRotulo~\imprimirorientador
+        \item \textbf{Instituição:} \imprimirinstituicao
+        \item \textbf{Centro:} Centro de Ciências da Saúde
+        \item \textbf{Curso:} Psicologia
+        \item \textbf{Data:} Setembro, 2020
+    \end{itemize}
 
 \newpage
 \begin{KeepFromToc}
@@ -183,6 +225,7 @@
 
         \item Avaliar o efeito da insônia/hipersonia na funcionalidade e
         cognição de sujeitos com transtornos de humor;
+
     \end{alineas}
 
 \section{Objetivos Específicos}\label{sec:especifico}
@@ -192,15 +235,19 @@
         \item Avaliar a qualidade do sono de sujeitos que converteram para TB
         quando comparados aos sujeitos com episódio depressivo recorrente ou
         persistente e sujeitos que apresentaram remissão;
+
         \item Comparar o tempo de sono total entre sujeitos que converteram para
         TB, sujeitos com episódio depressivo recorrente ou persistente e sujeitos
         que apresentaram remissão;
+
         \item Comparar o escore de disfunções cognitivas entre sujeitos que
         converteram para TB, sujeitos com episódio depressivo recorrente ou
         persistente e sujeitos que apresentaram remissão;
+
         \item Comparar a percepção subjetiva de funcionamento cognitivo entre
         sujeitos que converteram para TB, sujeitos com episódio depressivo
         recorrente ou persistente e sujeitos que apresentaram remissão;
+
         \item Avaliar o efeito da insônia/hipersonia na conversão do
         diagnóstico de TDM para TB.
 
@@ -214,15 +261,19 @@
         \item Os sujeitos bipolares apresentarão uma pior qualidade do sono
         quando comparados aos sujeitos que apresentam episódio depressivo
         recorrente ou persistente e sujeitos em remissão;
+
         \item Os sujeitos bipolares apresentarão um menor tempo de sono total
         quando comparados aos sujeitos que apresentam episódio depressivo
         recorrente ou persistente e sujeitos em remissão;
+
         \item Os sujeitos com episódio depressivo recorrente ou persistente
         apresentarão um maior escore de disfunções cognitivas quando comparados
         aos sujeitos bipolares;
+
         \item Os sujeitos com episódio depressivo recorrente ou persistente
         apresentarão uma maior incapacidade percebida no domínio de
         funcionamento cognitivo quando comparados aos sujeitos bipolares;
+
         \item A presença de insônia/hipersonia se apresentará como preditor
         para conversão de TDM para TB.
 
@@ -233,175 +284,242 @@
 
     \section{Estratégias de busca}\label{sec:estrategias}
 
-    Esta revisão de literatura foi elaborada na base de dados do \textit{Pubmed}
-    e da Biblioteca Virtual em Saúde (BVS), ambas no período entre setembro e
-    outubro de 2020.
-    Os descritores utilizados foram: \textit{``bipolar disorder''};
-    \textit{``cognitive functioning''}; \textit{``cognitive impairment''};
-    \textit{``cognitive performance''}; \textit{``depression''};
-    \textit{``hypersomnia''}; \textit{``insomnia''}; \textit{``prodrome''};
-    \textit{``recurrence''}; \textit{``relapse''}; \textit{``sleep dysfunction''};
-    \textit{``sleep quality''}.
-    Os resultados das combinações dos descritores está descrita nas tabelas
-    \ref{tab:pubmed} e \ref{tab:bvs}.
+        Esta revisão de literatura foi elaborada na base de dados do \textit{Pubmed}
+        e da Biblioteca Virtual em Saúde (BVS), ambas no período entre setembro e
+        outubro de 2020.
+        Os descritores utilizados foram: \textit{``bipolar disorder''};
+        \textit{``cognitive functioning''}; \textit{``cognitive impairment''};
+        \textit{``cognitive performance''}; \textit{``depression''};
+        \textit{``hypersomnia''}; \textit{``insomnia''}; \textit{``prodrome''};
+        \textit{``recurrence''}; \textit{``relapse''}; \textit{``sleep dysfunction''};
+        \textit{``sleep quality''}.
+        Os resultados das combinações dos descritores está descrita nas tabelas
+        \ref{tab:pubmed} e \ref{tab:bvs}.
     
-    \begin{table}[H]
-    \resizebox{\textwidth}{!}{%
-        \caption{Descrição das estratégias de buscas na base de dados do \textit{Pubmed}}
-        \label{tab:pubmed}
-        \begin{tabular}{@{}p{0.4\textwidth}cccc@{}}
-    \toprule
-        \textbf{Combinação dos descritores} & \textbf{Artigos encontrados} & \textbf{Títulos lidos} & \textbf{Resumos lidos} & \textbf{Artigos incluídos} \\ \midrule
-        \textit{sleep quality} \textbf{AND} \textit{cognitive impairment} \textbf{AND} \textit{bipolar disorder} &  18 & 7 & 5 & 4 \\ \midrule
-        \textit{insomnia} \textbf{AND} \textit{cognitive impairment} \textbf{AND} \textit{bipolar disorder} & 16 & 5 & 4 & 4 \\ \midrule
-        \textit{sleep quality} \textbf{AND} \textit{cognitive functioning} \textbf{AND} \textit{bipolar disorder} & 39 & 7 & 5 & 5 \\ \midrule
-        \textit{sleep quality} \textbf{AND} \textit{functioning} \textbf{AND} \textit{bipolar disorder} & 135 & 28 & 17 & 9 \\ \midrule
-        \textit{insomnia} \textbf{AND} \textit{prodrome} \textbf{AND} \textit{bipolar disorder} & 10 & 5 & 4 & 2 \\ \midrule
-        (\textit{insomnia} \textbf{OR} \textit{sleep quality}) \textbf{AND} (\textit{relapse} \textbf{OR} \textit{recurrence}) \textbf{AND} \textit{bipolar disorder} & 81 & 12 & 8 & 1 \\ \midrule
-        \textit{cognitive impairment} \textbf{AND} \textit{bipolar disorder} \textbf{AND} \textit{major depressive disorder} & 489 & 30 & 14 & 10 \\ \midrule
-        \textit{cognitive impairment} \textbf{AND} \textit{bipolar disorder} \textbf{AND} \textit{major depressive disorder} \textbf{AND} \textit{sleep} & 27 & 4 & 2 & 1 \\ \midrule
-        (\textit{hypersomnia} \textbf{OR} \textit{insomnia}) \textbf{AND} (\textit{relapse} \textbf{OR} \textit{recurrence}) \textbf{AND} (\textit{bipolar disorder} \textbf{OR} \textit{major depressive disorder}) & 280 & 15 & 9 & 5 \\ \bottomrule
-    \end{tabular}%
-    }
-    \fonte{Próprio Autor}
-    \end{table}
+        \begin{table}[H]
+        \resizebox{\textwidth}{!}{%
+            \caption{Descrição das estratégias de buscas na base de dados
+            do \textit{Pubmed}}
+            \label{tab:pubmed}
+            \begin{tabular}{@{}p{0.4\textwidth}cccc@{}}
+                \toprule
+                    \textbf{Combinação dos descritores} &
+                    \textbf{Artigos encontrados} &
+                    \textbf{Títulos lidos} &
+                    \textbf{Resumos lidos} &
+                    \textbf{Artigos incluídos} \\ \midrule
+                    \textit{sleep quality} \textbf{AND}
+                    \textit{cognitive impairment} \textbf{AND}
+                    \textit{bipolar disorder} &
+                    18 & 7 & 5 & 4 \\ \midrule
+                    \textit{insomnia} \textbf{AND} \textit{cognitive impairment}
+                    \textbf{AND} \textit{bipolar disorder} &
+                    16 & 5 & 4 & 4 \\ \midrule
+                    \textit{sleep quality} \textbf{AND}
+                    \textit{cognitive functioning} \textbf{AND}
+                    \textit{bipolar disorder} &
+                    39 & 7 & 5 & 5 \\ \midrule
+                    \textit{sleep quality} \textbf{AND}
+                    \textit{functioning} \textbf{AND}
+                    \textit{bipolar disorder} &
+                    135 & 28 & 17 & 9 \\ \midrule
+                    \textit{insomnia} \textbf{AND} \textit{prodrome}
+                    \textbf{AND} \textit{bipolar disorder} &
+                    10 & 5 & 4 & 2 \\ \midrule
+                    (\textit{insomnia} \textbf{OR} \textit{sleep quality})
+                    \textbf{AND} (\textit{relapse} \textbf{OR}
+                    \textit{recurrence}) \textbf{AND} \textit{bipolar disorder} &
+                    81 & 12 & 8 & 1 \\ \midrule
+                    \textit{cognitive impairment} \textbf{AND}
+                    \textit{bipolar disorder} \textbf{AND}
+                    \textit{major depressive disorder} &
+                    489 & 30 & 14 & 10 \\ \midrule
+                    \textit{cognitive impairment} \textbf{AND}
+                    \textit{bipolar disorder} \textbf{AND}
+                    \textit{major depressive disorder}
+                    \textbf{AND} \textit{sleep} &
+                    27 & 4 & 2 & 1 \\ \midrule
+                    (\textit{hypersomnia} \textbf{OR} \textit{insomnia})
+                    \textbf{AND} (\textit{relapse} \textbf{OR}
+                    \textit{recurrence}) \textbf{AND} (\textit{bipolar disorder}
+                    \textbf{OR} \textit{major depressive disorder}) &
+                    280 & 15 & 9 & 5 \\ \bottomrule
+            \end{tabular}%
+        }
+        \fonte{Próprio Autor}
+        \end{table}
 
 
-    \begin{table}[H]
-    \resizebox{\textwidth}{!}{%
-        \caption{Descrição das estratégias de buscas na base de dados da BVS}
-        \label{tab:bvs}
-        \begin{tabular}{@{}p{0.4\textwidth}cccc@{}}
-    \toprule
-        \textbf{Combinação dos descritores} & \textbf{Artigos encontrados} & \textbf{Títulos lidos} & \textbf{Resumos lidos} & \textbf{Artigos incluídos} \\ \midrule
-        (\textit{hypersomnia} \textbf{OR} \textit{insomnia}) \textbf{AND} (\textit{relapse} \textbf{OR} \textit{recurrence}) \textbf{AND} (\textit{bipolar disorder} \textbf{OR} \textit{major depressive disorder}) & 49 & 7 & 1 & 1 \\ \midrule
-        (\textit{hypersomnia} \textbf{OR} \textit{insomnia}) \textbf{AND} (\textit{functioning} \textbf{AND} (\textit{bipolar disorder} \textbf{OR} \textit{major depressive disorder}) & 39 & 10 & 2 & 1 \\ \bottomrule
-    \end{tabular}%
-    }
-    \fonte{Próprio Autor}
-    \end{table}
+        \begin{table}[H]
+        \resizebox{\textwidth}{!}{%
+            \caption{Descrição das estratégias de buscas na base de dados da BVS}
+            \label{tab:bvs}
+            \begin{tabular}{@{}p{0.4\textwidth}cccc@{}}
+                \toprule
+                    \textbf{Combinação dos descritores} &
+                    \textbf{Artigos encontrados} &
+                    \textbf{Títulos lidos} &
+                    \textbf{Resumos lidos} &
+                    \textbf{Artigos incluídos} \\ \midrule
+                    (\textit{hypersomnia} \textbf{OR} \textit{insomnia})
+                    \textbf{AND} (\textit{relapse} \textbf{OR}
+                    \textit{recurrence}) \textbf{AND} (\textit{bipolar disorder}
+                    \textbf{OR} \textit{major depressive disorder}) &
+                    49 & 7 & 1 & 1 \\ \midrule
+                    (\textit{hypersomnia} \textbf{OR} \textit{insomnia})
+                    \textbf{AND} (\textit{functioning} \textbf{AND}
+                    (\textit{bipolar disorder} \textbf{OR}
+                    \textit{major depressive disorder}) &
+                    39 & 10 & 2 & 1 \\ \bottomrule
+            \end{tabular}%
+        }
+        \fonte{Próprio Autor}
+        \end{table}
 
-    Com o objetivo de ampliar a inclusão de artigos relacionados ao tema do estudo
-    foram consultadas as referências dos artigos selecionados durante a busca, e
-    dessa forma, foram incluídos mais 5 artigos nesta revisão de literatura.
+        Com o objetivo de ampliar a inclusão de artigos relacionados ao tema do estudo
+        foram consultadas as referências dos artigos selecionados durante a busca, e
+        dessa forma, foram incluídos mais 5 artigos nesta revisão de literatura.
 
     \section{Corpo da revisão}\label{sec:corporevisao}
 
-    A maior parte dos estudos incluídos nesta revisão de literatura se utilizaram
-    de entrevista clínica na avaliação dos transtornos mentais, considerando os
-    critérios do DSM-IV, DSM-5 e CID-10
-    \parencite{american_psychiatric_association_diagnostic_2013,
-    american_psychiatric_association_diagnostic_1998,
-    organizacao_mundial_da_saude_cid-10_2000}.
-    Os estudos variam entre revisões e estudos empíricos,
-    com amostras clínicas e comunitárias.
-    Na literatura, há uma compreensão da relação entre transtorno bipolar
-    e perturbações no sono, verificando estas alterações como preditores
-    para o início e recorrência de episódios de humor
-    \parencite{pancheri_systematic_2019,
-    melo_sleep_2016,harvey_sleep_2009,
-    ritter_role_2011,andrade-gonzalez_initial_2020,
-    kaplan_sleep_2020}.
+        A maior parte dos estudos incluídos nesta revisão de literatura se utilizaram
+        de entrevista clínica na avaliação dos transtornos mentais, considerando os
+        critérios do DSM-IV, DSM-5 e CID-10
+        \parencite{american_psychiatric_association_diagnostic_2013,
+        american_psychiatric_association_diagnostic_1998,
+        organizacao_mundial_da_saude_cid-10_2000}.
+        Os estudos variam entre revisões e estudos empíricos,
+        com amostras clínicas e comunitárias.
+        Na literatura, há uma compreensão da relação entre transtorno bipolar
+        e perturbações no sono, verificando estas alterações como preditores
+        para o início e recorrência de episódios de humor
+        \parencite{pancheri_systematic_2019,
+        melo_sleep_2016,harvey_sleep_2009,
+        ritter_role_2011,andrade-gonzalez_initial_2020,
+        kaplan_sleep_2020}.
 
-    Para a avaliação dos parâmetros do sono, a maioria dos estudos selecionados
-    se utilizaram do instrumento \textit{Pittsburgh Sleep Quality Index} (PSQI),
-    que será detalhado posteriormente na \autoref{sec:psqi}
-    \parencite{buysse_pittsburgh_1989}.
-    Na observação da funcionalidade dos sujeitos, a grande parte dos trabalhos
-    fez uso da \textit{Functioning Assessment Short Test} (FAST), explicada
-    melhor na \autoref{sec:fast}
-    \parencite{rosa_validity_2007}.
-    Em relação a medida utilizada para o desempenho cognitivo dos sujeitos nos
-    três estudos selecionados que avaliaram este construto, dois deles utilizaram
-    subtestes da \textit{Wechsler Adult Intelligence Scale} (WAIS), ambos diferentes
-    do subteste utilizado nessa pesquisa
-    \parencite{wechsler_wais_2004}.
-    Enquanto o terceiro estudo fez uso da \textit{MATRICS Consensus Cognitive Battery}
-    (MCCB) para avaliação de domínios cognitivos
-    \parencite{bo_use_2017,
-    nuechterlein_matrics_2008}.
+        Para a avaliação dos parâmetros do sono, a maioria dos estudos selecionados
+        se utilizaram do instrumento \textit{Pittsburgh Sleep Quality Index} (PSQI),
+        que será detalhado posteriormente na \autoref{sec:psqi}
+        \parencite{buysse_pittsburgh_1989}.
+        Na observação da funcionalidade dos sujeitos, a grande parte dos trabalhos
+        fez uso da \textit{Functioning Assessment Short Test} (FAST), explicada
+        melhor na \autoref{sec:fast}
+        \parencite{rosa_validity_2007}.
+        Em relação a medida utilizada para o desempenho cognitivo dos sujeitos nos
+        três estudos selecionados que avaliaram este construto, dois deles utilizaram
+        subtestes da \textit{Wechsler Adult Intelligence Scale} (WAIS), ambos diferentes
+        do subteste utilizado nessa pesquisa
+        \parencite{wechsler_wais_2004}.
+        Enquanto o terceiro estudo fez uso da \textit{MATRICS Consensus Cognitive Battery}
+        (MCCB) para avaliação de domínios cognitivos
+        \parencite{bo_use_2017,
+        nuechterlein_matrics_2008}.
 
-    De forma geral na literatura existe uma tendência de sujeitos com TB
-    apresentarem pior sono do que sujeitos saudáveis sem transtornos mentais
-    \parencite{boland_associations_2015,
-    russo_relationship_2015,
-    lai_familiality_2014,
-    bradley_sleep_2017,
-    st-amand_sleep_2013}.
-    Da mesma forma, sujeitos que apresentam risco para o desenvolvimento de TB,
-    sendo eles, indivíduos com parentes de 1\textsuperscript{o} ou 2\textsuperscript{o}
-    grau com TB, depressivos, pacientes subsindrômicos ou com características
-    ciclotímicas, também apresentam alterações nos padrões de sono piores em relação
-    aos grupos controle.
-    \parencite{zanini_abnormalities_2015,
-    ritter_characteristics_2012}.
+        De forma geral na literatura existe uma tendência de sujeitos com TB
+        apresentarem pior sono do que sujeitos saudáveis sem transtornos mentais
+        \parencite{boland_associations_2015,
+        russo_relationship_2015,
+        lai_familiality_2014,
+        bradley_sleep_2017,
+        st-amand_sleep_2013}.
+        Da mesma forma, sujeitos que apresentam risco para o desenvolvimento de TB,
+        sendo eles, indivíduos com parentes de
+        1\textsuperscript{o} ou 2\textsuperscript{o}
+        grau com TB, depressivos, pacientes subsindrômicos ou com características
+        ciclotímicas, também apresentam alterações nos padrões de sono piores em relação
+        aos grupos controle.
+        \parencite{zanini_abnormalities_2015,
+        ritter_characteristics_2012}.
 
 \vspace{\onelineskip}
 \chapter{Método}\label{sec:metodo}
 
-\section{Delineamento}\label{sec:delineamento}
+    \section{Delineamento}\label{sec:delineamento}
 
-    Trata-se de um estudo de coorte prospectivo, em que a primeira fase ocorreu
-    entre os anos de 2012 e 2015, onde foram avaliados 585 indivíduos no
-    \textit{baseline} com idade entre 18 e 60 anos.
-    Entre 2017 e 2018 aconteceu a segunda fase do estudo em que 468 indivíduos
-    foram reavaliados.
+        Trata-se de um estudo de coorte prospectivo, em que a primeira fase ocorreu
+        entre os anos de 2012 e 2015, onde foram avaliados 585 indivíduos no
+        \textit{baseline} com idade entre 18 e 60 anos.
+        Entre 2017 e 2018 aconteceu a segunda fase do estudo em que 468 indivíduos
+        foram reavaliados.
 
-\section{Amostra}\label{sec:sujeitos}
+    \section{Amostra}\label{sec:sujeitos}
 
-    \subsection{População alvo}
+        \subsection{População alvo}
 
-    Sujeitos que buscaram atendimento no Ambulatório de Pesquisa e Extensão
-    em Saúde Mental da Universidade Católica de Pelotas, com idade entre 18
-    e 60 anos, que preencheram critérios para o diagnóstico de transtorno
-    depressivo maior na primeira fase do estudo, e apresentaram remissão,
-    episódio depressivo recorrente ou conversão para TB.
+            Sujeitos que buscaram atendimento no Ambulatório de Pesquisa e Extensão
+            em Saúde Mental da Universidade Católica de Pelotas, com idade entre 18
+            e 60 anos, que preencheram critérios para o diagnóstico de transtorno
+            depressivo maior na primeira fase do estudo, e apresentaram remissão,
+            episódio depressivo recorrente ou conversão para TB.
 
-   \subsection{Amostragem} 
+        \subsection{Amostragem} 
     
-    A amostra foi selecionada por conveniência. O estudo foi divulgado na mídia
-    local e em serviços de saúde do município, e a partir da divulgação,
-    os participantes que chegavam ao ambulatório eram avaliados por psicólogos
-    capacitados para realizar a entrevista clínica diagnóstica.
+            A amostra foi selecionada por conveniência. O estudo foi divulgado na mídia
+            local e em serviços de saúde do município, e a partir da divulgação,
+            os participantes que chegavam ao ambulatório eram avaliados por psicólogos
+            capacitados para realizar a entrevista clínica diagnóstica.
 
-    \subsection{Critérios de elegibilidade}
+        \subsection{Critérios de elegibilidade}
 
-    Critérios de inclusão:
-    \begin{itemize}
-        \item Ter entre 18 e 60 anos na primeira fase do estudo;
-        \item Ser diagnosticado com TDM pela equipe da pesquisa,
-        através da MINI na primeira fase, e apresentar remissão,
-        episódio depressivo recorrente ou conversão para TB na segunda fase;
-    \end{itemize}
+            Critérios de inclusão:
 
-    Critérios de exclusão:
-    \begin{itemize}
-        \item Uso abusivo de substâncias psicoativas ilícitas;
-        \item Incapacidade de entender os instrumentos da pesquisa.
-        \item Apresentar risco de suicídio moderado ou grave.
+            \begin{itemize}
+
+                \item Ter entre 18 e 60 anos na primeira fase do estudo;
+
+                \item Ser diagnosticado com TDM pela equipe da pesquisa,
+                através da MINI na primeira fase, e apresentar remissão,
+                episódio depressivo recorrente ou conversão para TB na segunda fase;
+
+            \end{itemize}
+
+            Critérios de exclusão:
+
+            \begin{itemize}
+
+                \item Uso abusivo de substâncias psicoativas ilícitas;
+
+                \item Incapacidade de entender os instrumentos da pesquisa.
+
+                \item Apresentar risco de suicídio moderado ou grave.
+
     \end{itemize}
 
 \section{Definição das variáveis}\label{sec:variaveis}
 
-\begin{table}[H]
-\resizebox{\textwidth}{!}{%
-\caption{Descrição das variáveis, instrumento utilizado para coleta, classificação e tipo}
-\begin{tabular}{@{}llll@{}}
-\toprule
-\textbf{Variável} & \textbf{Coleta de dados} & \textbf{Classificação} & \textbf{Tipo de variável} \\ \midrule
-Transtorno Bipolar & MINI & Sim/Não & Dicotômica \\ \midrule
-Episódio Depressivo Atual & MINI & Sim/Não & Dicotômica \\ \midrule
-Sexo & Questionário Sociodemográfico & Masculino/Feminino & Dicotômica \\ \midrule
-Idade & Questionário Sociodemográfico & Anos Inteiros & Quantitativa Discreta \\ \midrule
-Percepção Subjetiva da Cognição & COBRA & Escore total & Quantitativa Discreta \\ \midrule
-Cognição Objetiva & WAIS & Escore bruto & Quantitativa Discreta\\ \midrule
-Funcionamento Global & FAST & Escore total & Quantitativa Discreta \\ \midrule
-Qualidade Geral do Sono & PSQI & Escore total & Quantitativa Discreta \\ \midrule
-Insônia ou Hipersonia & MINI & Sim/Não & Dicotômica \\ \bottomrule
-\end{tabular}%
-}
-\fonte{Próprio Autor}
-\end{table}
+    \begin{table}[H]
+    \resizebox{\textwidth}{!}{%
+    \caption{Descrição das variáveis, instrumento utilizado para coleta, classificação e tipo}
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        \textbf{Variável} &
+        \textbf{Coleta de dados} &
+        \textbf{Classificação} &
+        \textbf{Tipo de variável} \\ 
+        \midrule
+        Transtorno Bipolar & MINI & Sim/Não & Dicotômica \\ 
+        \midrule
+        Episódio Depressivo Atual & MINI & Sim/Não & Dicotômica \\ 
+        \midrule
+        Sexo & Questionário Sociodemográfico & Masculino/Feminino & Dicotômica \\ 
+        \midrule
+        Idade & Questionário Sociodemográfico & Anos Inteiros & Quantitativa Discreta \\ 
+        \midrule
+        Percepção Subjetiva da Cognição & COBRA & Escore total & Quantitativa Discreta \\ 
+        \midrule
+        Cognição Objetiva & WAIS & Escore bruto & Quantitativa Discreta\\ 
+        \midrule
+        Funcionamento Global & FAST & Escore total & Quantitativa Discreta \\ 
+        \midrule
+        Qualidade Geral do Sono & PSQI & Escore total & Quantitativa Discreta \\ 
+        \midrule
+        Insônia ou Hipersonia & MINI & Sim/Não & Dicotômica \\ 
+        \bottomrule
+    \end{tabular}%
+    }
+    \fonte{Próprio Autor}
+    \end{table}
 
 \section{Instrumentos}\label{sec:instrumentos}
 
@@ -740,54 +858,104 @@ Sono reduzido foi estatisticamente diferente entre o grupo dos bipolares e cada 
     44 participantes com TB. Instrumentos: Bipolar Prodrome Symptom Scale-Retrospective (BPSS-R), entrevista semi-estruturada para mudanças de humor &
     Os sintomas prodrômicos mais frequentemente relatados antes do primeiro episódio (hipo)maníaco incluem sentir-se extremamente enérgico, agitação física, tagarelice, devaneios e baixa necessidade de sono &
     Não houve separação dos tipos de TB \\ \midrule
-    \textcite{van_meter_bipolar_2016}, \textit{Journal of the American Academy of Child \& Adolescent Psychiatry} &
-    Meta-analisar estudos reportando a prevalência de sintomas que ocorrem antes de um primeiro episódio ou episódio recorrente de humor associado ao TB &
-    Revisão de literatura, bases de dados do \textit{PsycINFO} e \textit{Pubmed}, atualizado em junho de 2015. Descritores: (\textit{bipolar disorder} OR \textit{bipolar} OR \textit{cyclothymi*} OR \textit{manic} OR \textit{manic depressive}) AND (\textit{prodrom*} OR \textit{early onset} OR \textit{precursor}) &
-    Prevalência de sintomas prodrômicos prévio ao primeiro episódio de humor: energia demasiada (68\%), habilidade de pensar diminuída (63\%), indecisão (62\%), insônia (54\%), etc. E prévio ao primeiro episódio maníaco foram: energia demasiada (87\%), tagarelice (60\%), diminuição da necessidade de sono (57\%), humor irritável (54\%), etc.&
+    \textcite{van_meter_bipolar_2016},
+    \textit{Journal of the American Academy of Child \& Adolescent Psychiatry} &
+    Meta-analisar estudos reportando a prevalência de sintomas que ocorrem
+    antes de um primeiro episódio ou episódio recorrente de humor associado ao TB &
+    Revisão de literatura, bases de dados do \textit{PsycINFO} e \textit{Pubmed},
+    atualizado em junho de 2015. Descritores: (\textit{bipolar disorder}
+    OR \textit{bipolar} OR \textit{cyclothymi*} OR \textit{manic} OR
+    \textit{manic depressive}) AND (\textit{prodrom*} OR \textit{early onset} OR
+    \textit{precursor}) &
+    Prevalência de sintomas prodrômicos prévio ao primeiro episódio de humor:
+    energia demasiada (68\%), habilidade de pensar diminuída (63\%),
+    indecisão (62\%), insônia (54\%), etc. E prévio ao primeiro episódio maníaco foram:
+    energia demasiada (87\%), tagarelice (60\%), diminuição da necessidade de sono (57\%),
+    humor irritável (54\%), etc. &
     Limitações: Diferença de instrumentos e delineamentos \\ \midrule
     \textcite{st-amand_sleep_2013}, \textit{Journal of Affective Disorders} &
-    Descrever a natureza e severidade das dificuldades no sono em indivíduos com TB durante fases de remissão &
-    Longitudinal (2 semanas), 44 participantes, grupo de bipolares, grupo de sujeitos com insônia e grupo sem insônia e sem transtornos mentais. Instrumentos: SCID-I, IIS (insônia), HDRS, BDI-II, YMRS, ISI, diário do sono, actigrafia, GITI, SRM-II-5, ESS &
-    Sujeitos com TB relataram dificuldades no sono mais severas que o grupo sem transtorno, porém menos dificuldades severas que o grupo dos sujeitos com insônia &
+    Descrever a natureza e severidade das dificuldades no sono em indivíduos
+    com TB durante fases de remissão &
+    Longitudinal (2 semanas), 44 participantes, grupo de bipolares,
+    grupo de sujeitos com insônia e grupo sem insônia e sem transtornos mentais.
+    Instrumentos: SCID-I, IIS (insônia), HDRS, BDI-II, YMRS, ISI, diário do sono,
+    actigrafia, GITI, SRM-II-5, ESS &
+    Sujeitos com TB relataram dificuldades no sono mais severas que
+    o grupo sem transtorno, porém menos dificuldades severas que o grupo
+    dos sujeitos com insônia &
     Limitação: não houve equivalência em relação a uso de medicação nos grupos \\ \midrule
     \textcite{boland_sleep_2013}, \textit{Clinical Psychology Review} &
-    Examinar evidências para o estudo da relação entre perturbação no sono e prejuízo cognitivo no TB &
+    Examinar evidências para o estudo da relação entre perturbação no sono
+    e prejuízo cognitivo no TB &
     Revisão de literatura narrativa &
-    Há presença de prejuízo funcional em bipolares em remissão. Verificou-se evidências de má performance no trabalho em sujeitos com insônia e transtornos respiratórios do sono &
+    Há presença de prejuízo funcional em bipolares em remissão.
+    Verificou-se evidências de má performance no trabalho em sujeitos com
+    insônia e transtornos respiratórios do sono &
     Não encontrou estudos com a relação \\ \midrule
     \textcite{rosa_clinical_2009}, \textit{Bipolar Disorders} &
-    Avaliar o nível de funcionamento além de identificar potenciais preditores do funcionamento em uma amostra de bipolares eutímicos &
-    Coorte prospectivo, 71 bipolares eutímicos e 61 controles saudáveis. Instrumentos: SCID, HAM-D, YMRS, FAST &
-    60\% dos bipolares apresentaram prejuízo funcional comparado aos 13\% do grupo controle. Bipolares apresentaram menor funcionamento em alguns domínios, incluíndo o cognitivo &
+    Avaliar o nível de funcionamento além de identificar potenciais preditores
+    do funcionamento em uma amostra de bipolares eutímicos &
+    Coorte prospectivo, 71 bipolares eutímicos e 61 controles saudáveis.
+    Instrumentos: SCID, HAM-D, YMRS, FAST &
+    60\% dos bipolares apresentaram prejuízo funcional comparado aos 13\% do grupo
+    controle. Bipolares apresentaram menor funcionamento em alguns domínios,
+    incluíndo o cognitivo &
     \\ \midrule
     \textcite{kapczinski_cognition_2016}, Revista Brasileira de Psiquiatria &
-    Avaliar cognição e funcionamento global em um grupo de pacientes com depressão bipolar &
-    100 pacientes com depressão bipolar e 70 controles pareados. Instrumentos: SCID, subteste da extensão de dígitos da WAIS-III, FAST &
-    Bipolares demonstraram pior memória de trabalho, pior funcionamento executivo e global. Pacientes com depressão severa tiveram pior funcionamento global comparado aos com depressão moderada &
+    Avaliar cognição e funcionamento global em um grupo de pacientes com
+    depressão bipolar &
+    100 pacientes com depressão bipolar e 70 controles pareados.
+    Instrumentos: SCID, subteste da extensão de dígitos da WAIS-III, FAST &
+    Bipolares demonstraram pior memória de trabalho, pior funcionamento
+    executivo e global. Pacientes com depressão severa tiveram pior
+    funcionamento global comparado aos com depressão moderada &
     \\ \midrule
     \textcite{macqueen_cognitive_2017}, \textit{Psychiatry and Clinical Neurosciences} &
-    Examinar se existem diferenças entre a função cognitiva entre pacientes com TDM e TB & Revisão de literatura narrativa & Um estudo achou que pacientes com TDM em remissão eram mais prejudicados cognitivamente que pacientes com TB & Não há consenso nas questões estudadas \\ \midrule \textcite{martinez-aran_cognitive_2004}, \textit{American Journal of Psychiatry} & Avaliar funcionamento neuropsicológico entre os diferentes estados do TB & 30 bipolares em depressão, 34 bipolares em (hipo)mania, 44 bipolares em eutimia, 30 controles saudáveis. Instrumentos: HAM-D, GAF, subtestes da WAIS &
-    Bipolares tiveram pior performance em relação aos controles, especialmente nas medidas de memória verbal e funcionamento executivo &
+    Examinar se existem diferenças entre a função cognitiva entre pacientes com TDM e TB &
+    Revisão de literatura narrativa & 
+    Um estudo achou que pacientes com TDM em remissão eram mais prejudicados
+    cognitivamente que pacientes com TB &
+    Não há consenso nas questões estudadas \\ \midrule
+    \textcite{martinez-aran_cognitive_2004}, \textit{American Journal of Psychiatry} &
+    Avaliar funcionamento neuropsicológico entre os diferentes estados do TB &
+    30 bipolares em depressão, 34 bipolares em (hipo)mania, 44 bipolares em eutimia,
+    30 controles saudáveis. Instrumentos: HAM-D, GAF, subtestes da WAIS &
+    Bipolares tiveram pior performance em relação aos controles,
+    especialmente nas medidas de memória verbal e funcionamento executivo &
     Limitação: amostra pequena \\ \midrule
     \textcite{van_der_werf-eldering_cognitive_2010}, \textit{PLoS ONE} &
-    Avaliar funcionamento cognitivo em bipolares e verificar sua associação com sintomas depressivos &
+    Avaliar funcionamento cognitivo em bipolares e verificar sua associação com
+    sintomas depressivos &
     110 bipolares e 75 controles. Instrumentos: MINI, CANTAB (vários domínios) &
-    Verificou-se prejuízo significativo do funcionamento cognitivo no TB. Sintomas depressivos podem afetar negativamente o functionamento cognitivo &
+    Verificou-se prejuízo significativo do funcionamento cognitivo no TB.
+    Sintomas depressivos podem afetar negativamente o functionamento cognitivo &
     \\ \midrule
     \textcite{schneider_cognitive_2008}, Revista Brasileira de Psiquiatria &
-    Examinar o desempenho cognitivo de pacientes com TB, em episódio depressivo e em humor eutímico, comparado a sujeitos saudáveis &
-    32 sujeitos em depressão bipolar, 34 bipolares em eutimia e 28 controles saudáveis. WAIS-III foi utilizado para medir funcionamento cognitivo &
-    Ambos os grupos de pacientes apresentaram pior desempenho cognitivo nas áreas verbais e não-verbais medidas pela WAIS comparados aos controles, sugerindo estabilidade e cronicidade dos déficits &
+    Examinar o desempenho cognitivo de pacientes com TB, em episódio depressivo
+    e em humor eutímico, comparado a sujeitos saudáveis &
+    32 sujeitos em depressão bipolar, 34 bipolares em eutimia e 28 controles saudáveis.
+    WAIS-III foi utilizado para medir funcionamento cognitivo &
+    Ambos os grupos de pacientes apresentaram pior desempenho cognitivo nas áreas
+    verbais e não-verbais medidas pela WAIS comparados aos controles,
+    sugerindo estabilidade e cronicidade dos déficits &
     \\ \midrule
     \textcite{bo_comparison_2019}, \textit{Psychiatry and Clinical Neurosciences} &
-    Comparar a função cognitiva de pacientes com TB ou TDM, seus parentes de 1\textsuperscript{o} grau não afetados (PNA) e controles saudáveis &
-    105 bipolares, 109 deprimidos, 85 parentes e 95 controles. Instrumentos: RBANS (performance neurocognitiva), WAIS (avaliar QI) &
-    Escore menor que 70 na RBANS em dois ou mais domínios: CS: 7.4\%; PNA: 10,2\%; TDM: 18,8\%; TB: 19,8\%. Média de escore do desempenho cognitivo (melhor para pior): CS, PNA, TDM, TB &
+    Comparar a função cognitiva de pacientes com TB ou TDM, seus parentes de
+    1\textsuperscript{o} grau não afetados (PNA) e controles saudáveis &
+    105 bipolares, 109 deprimidos, 85 parentes e 95 controles.
+    Instrumentos: RBANS (performance neurocognitiva), WAIS (avaliar QI) &
+    Escore menor que 70 na RBANS em dois ou mais domínios:
+    CS: 7.4\%; PNA: 10,2\%; TDM: 18,8\%; TB: 19,8\%.
+    Média de escore do desempenho cognitivo (melhor para pior): CS, PNA, TDM, TB &
     Amostra chinesa \\ \midrule
     \textcite{reyes_functional_2017}, \textit{Psychiatry Research} &
-    Comparar o funcionamento global e desempenho cognitivo em uma amostra comunitária de jovens adultos com transtornos de humor a controles comunitários &
+    Comparar o funcionamento global e desempenho cognitivo em uma amostra
+    comunitária de jovens adultos com transtornos de humor a controles comunitários &
     1258 sujeitos. Instrumentos: MINI-PLUS, SCID, ASSIST, FAST, MoCA-BR, YMRS, MADRS &
-    Escores da FAST foram piores em sujeitos com transtorno de humor comparados aos controles, e piores em bipolares comparados aos controles após ajuste. Escores do MoCA (desempenho cognitivo) foi pior em sujeitos com transtorno de humor comparados aos controles &
+    Escores da FAST foram piores em sujeitos com transtorno de humor comparados aos
+    controles, e piores em bipolares comparados aos controles após ajuste.
+    Escores do MoCA (desempenho cognitivo) foi pior em sujeitos com transtorno
+    de humor comparados aos controles &
     \\ \midrule
     \textcite{rosa_functional_2010}, \textit{Value in Health} &
     &
