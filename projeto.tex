@@ -23,8 +23,6 @@
 
 \autor{Bruno Braga Montezano}
 
-\instituicao{Universidade Católica de Pelotas}
-
 \local{Pelotas}
 
 \orientador[Prof\textsuperscript{a}. Dra.]{Karen Jansen}
@@ -43,6 +41,7 @@
             uniquename=init,
             giveninits,
             repeatfields]{biblatex} % Citações padrão ABNT
+
 \addbibresource{ref.bib}            % Adicionando arquivo de bibliografia
 
 \usepackage[utf8]{inputenc}         % Suporte para codificação UTF-8
@@ -51,17 +50,20 @@
 \usepackage{indentfirst}            % Indenta o primeiro parágrafo de cada seção
 
 \usepackage{graphicx}               % Pacote para inserir imagens e tabelas
-\usepackage{booktabs}               % Pacote para criar tabelas no estilo booktabs
+\usepackage{pdfpages}               % Pacote para inserir páginas em PDF
+\usepackage{lscape}                 % Pacote para modo paisagem
+
 \usepackage{newtxtext,newtxmath}    % Pacotes para utilizar Times
+\usepackage{microtype}              % Melhorar aparência sem obstrução visual
+\usepackage[font=sf]{caption}       % Legenda com fonte sem serifa
+
+\usepackage{booktabs}               % Pacote para criar tabelas no estilo booktabs
 \usepackage{longtable}              % Pacote para criar tabelas de múltiplas páginas
 \usepackage{tabu}                   % Pacote para flexibilizar tabelas e tabelas longas
-\usepackage{lscape}                 % Pacote para modo paisagem
-\usepackage{pdfpages}               % Pacote para inserir páginas em PDF
-\usepackage[font=sf]{caption}       % Legenda com fonte sem serifa
-\usepackage{microtype}              % Melhorar aparência sem obstrução visual
 \usepackage{float}                  % Pacote para flutuar elementos
     \floatstyle{plaintop}           % Força legenda das tabelas no topo
     \restylefloat{table}            % Deixa as tabelas flutuantes
+
 
 % -------------------------------------
 % Modificações na Classe de Documento
@@ -175,13 +177,21 @@
 \pretextualchapter{Identificação}\label{sec:identificacao}
 
     \begin{itemize}
+
         \item \textbf{Título:} \imprimirtitulo
+
         \item \textbf{Discente:} \imprimirautor
+
         \item \textbf{Orientador:} \imprimirorientadorRotulo~\imprimirorientador
+
         \item \textbf{Instituição:} \imprimirinstituicao
+            
         \item \textbf{Centro:} Centro de Ciências da Saúde
+
         \item \textbf{Curso:} Psicologia
+
         \item \textbf{Data:} Setembro, 2020
+
     \end{itemize}
 
 \newpage
@@ -198,6 +208,7 @@
 
     \textbf{Palavras-chave:} transtorno bipolar; qualidade do sono;
     funcionamento cognitivo; adultos jovens.
+
 \end{resumo}
 
 \textual
@@ -1312,21 +1323,52 @@
     \\ \midrule
 
     \textcite{rosa_functional_2010}, \textit{Value in Health} &
-    &
-    &
-    &
+    Avaliar domínios da vida específicos do funcionamento tal como
+    o funcionamento geral em bipolares entre diferentes estados de
+    humor comparados a controles saudáveis via FAST &
+    Estudo transversal, 68 bipolares eutímicos, 31 sob episódio maníaco,
+    32 sob episódio depressivo e 61 controles saudáveis.
+    Instrumentos: SCID, HAM-D, YMRS, FAST &
+    Grupos dos pacientes experienciaram pior funcionamento geral
+    quando comparados ao grupo controle. Grupos depressivo e
+    (hipo)maníaco demosntraram pior funcionamento quando comparados
+    aos eutímicos e controles. Grupo depressivo mostrou mais prejuízo
+    que o grupo (hipo)maníaco no funcionamento geral e outros domínios,
+    incluindo funcionamento cognitivo &
+    Limitação: não levou em conta sintomas mistos sublimiares
+    para o funcionamento
     \\ \midrule
 
     \textcite{luo_subjective_2020}, \textit{Psychiatry Research} &
-    &
-    &
-    &
+    Medir a prevalência e os fatores relevantes da disfunção cognitiva
+    subjetiva em bipolares, explorar os efeitos do funcionamento cognitivo
+    subjetivo na predição de funcionamento psicossocial e ideação suicida
+    e explorar se sintomas depressivos podem moderar a relação entre 
+    funcionamento cognitivo e psicossocial e ideação suicida &
+    42 bipolares deprimidos, 50 bipolares eutímicos e 60 controles saudáveis.
+    Instrumentos: HDRS-17, COBRA, TMT-A, subtestes da WAIS, TMT-B,
+    WMS-R, GAF, BSI &
+    87\% dos pacientes bipolares apresentaram queixas cognitivas, sendo 97.6\%
+    dos deprimidos e 78\% dos eutímicos com TB. Grupo deprimido teve escores
+    maiores que os eutímicos, e ambos grupos de pacientes tiveram escores da 
+    COBRA maiores que o grupo saudável. Funcionamento cognitivo subjetivo pode
+    negativamente prever o funcionamento psicossocial e positivamente prever
+    ideação suicida em pacientes bipolares &
+    Amostra relativamente pequena
     \\ \midrule
 
     \textcite{lin_associations_2019}, \textit{Journal of Affective Disorders} &
-    &
-    &
-    &
+    Comparar funcionamento cognitivo subjetivo e explorar associações entre
+    funcionamento cognitivo objetivo e subjetivo entre diferentes estados
+    clínicos do TB &
+    48 sujeitos em (hipo)mania, 42 deprimidos com TB, 50 bipolares eutímicos,
+    60 controles saudáveis.
+    Instrumentos: COBRA, WAIS-RC, SCWT, TMT-B, TMT-A, WMS-R &
+    Deprimidos apresentaram maior escore na COBRA do que os outros 3 grupos.
+    Os grupos de pacientes mostraram mais dificuldades cognitivas subjetivas que
+    os controles. Bipolares tiveram pior desempenho que os controles em todos
+    testes neuropsicológicos &
+    Limitação: influência de medicações
     \\ \bottomrule
 
             \end{longtabu}
