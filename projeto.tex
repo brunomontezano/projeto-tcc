@@ -50,6 +50,7 @@
 \usepackage[T1]{fontenc}            % Suporte para codificação de fonte T1
 
 \usepackage{indentfirst}            % Indenta o primeiro parágrafo de cada seção
+\usepackage{nameref}                % Permite referenciar nome de uma seção
 
 \usepackage{graphicx}               % Pacote para inserir imagens e tabelas
 \usepackage{pdfpages}               % Pacote para inserir páginas em PDF
@@ -488,6 +489,10 @@
         referidas associações significativas entre o desempenho cognitivo dos
         sujeitos e suas perturbações no sono.
 
+        Para mais informações relacionadas aos artigos citados nesta revisão
+        de literatura, existe uma \nameref{sec:tabelarevisao} na seção de Anexos,
+        onde constam informações detalhadas sobre cada estudo.
+
 \vspace{\onelineskip}
 \chapter{Método}\label{sec:metodo}
 
@@ -779,6 +784,7 @@
     \begin{landscape}
 
     \chapter{Tabela de Revisão}
+    \label{sec:tabelarevisao}
 
             \noindent
             \begin{longtabu} to \linewidth{@{}p{0.08\linewidth}
