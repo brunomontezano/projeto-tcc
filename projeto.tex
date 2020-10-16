@@ -63,6 +63,7 @@
 \usepackage{booktabs}               % Pacote para criar tabelas no estilo booktabs
 \usepackage{longtable}              % Pacote para criar tabelas de múltiplas páginas
 \usepackage{tabu}                   % Pacote para flexibilizar tabelas e tabelas longas
+\usepackage{array}                  % Pacote para ampliar opções de formatos de coluna
 \usepackage{float}                  % Pacote para flutuar elementos
     \floatstyle{plaintop}           % Força legenda das tabelas no topo
     \restylefloat{table}            % Deixa as tabelas flutuantes
@@ -789,11 +790,12 @@
     \label{sec:tabelarevisao}
 
             \noindent
-            \begin{longtabu} to \linewidth{@{}p{0.08\linewidth}
-                                              p{0.22\linewidth}
-                                              p{0.26\linewidth}
-                                              p{0.26\linewidth}
-                                              p{0.12\linewidth}}
+            \begin{longtabu} to \linewidth{@{}
+                m{0.08\linewidth}
+                m{0.22\linewidth}
+                m{0.26\linewidth}
+                m{0.26\linewidth}
+                m{0.12\linewidth}}
             \toprule
             \textbf{Autor, ano e revista} & \textbf{Objetivo} &
             \textbf{Método (delineamento, amostra, instrumentos...)} &
