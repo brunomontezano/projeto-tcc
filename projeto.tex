@@ -17,9 +17,9 @@
                english,
                brazil]{abntex2}    % Opções comuns: [openright,twoside,a4paper,brazil]
 
-\titulo{Efeitos do prejuízo no sono na
-        funcionalidade e cognição de
-        sujeitos com transtornos de humor}
+\titulo{Efeitos das alterações nos padrões de sono
+        na conversão diagnóstica e neuroprogressão
+        de sujeitos com transtornos de humor}
 
 \autor{Bruno Braga Montezano}
 
@@ -42,31 +42,32 @@
             style=abnt,
             uniquename=init,
             giveninits,
-            repeatfields]{biblatex} % Citações padrão ABNT
+            repeatfields]{biblatex}    % Citações padrão ABNT
 
-\addbibresource{ref.bib}            % Adicionando arquivo de bibliografia
+\addbibresource{ref.bib}               % Adicionando arquivo de bibliografia
 
-\usepackage[utf8]{inputenc}         % Suporte para codificação UTF-8
-\usepackage[T1]{fontenc}            % Suporte para codificação de fonte T1
+\usepackage[utf8]{inputenc}            % Suporte para codificação UTF-8
+\usepackage[T1]{fontenc}               % Suporte para codificação de fonte T1
 
-\usepackage{indentfirst}            % Indenta o primeiro parágrafo de cada seção
-\usepackage{nameref}                % Permite referenciar nome de uma seção
+\usepackage{indentfirst}               % Indenta o primeiro parágrafo de cada seção
+\usepackage{nameref}                   % Permite referenciar nome de uma seção
 
-\usepackage{graphicx}               % Pacote para inserir imagens e tabelas
-\usepackage{pdfpages}               % Pacote para inserir páginas em PDF
-\usepackage{lscape}                 % Pacote para modo paisagem
+\usepackage{graphicx}                  % Pacote para inserir imagens e tabelas
+\usepackage{pdfpages}                  % Pacote para inserir páginas em PDF
+\usepackage{lscape}                    % Pacote para modo paisagem
 
-\usepackage{newtxtext,newtxmath}    % Pacotes para utilizar Times
-\usepackage{microtype}              % Melhorar aparência sem obstrução visual
-\usepackage[font=sf]{caption}       % Legenda com fonte sem serifa
+\usepackage{newtxtext,newtxmath}       % Pacotes para utilizar Times
+\usepackage{microtype}                 % Melhorar aparência sem obstrução visual
+\usepackage[font=sf]{caption}          % Legenda com fonte sem serifa
 
-\usepackage{booktabs}               % Pacote para criar tabelas no estilo booktabs
-\usepackage{longtable}              % Pacote para criar tabelas de múltiplas páginas
-\usepackage{tabu}                   % Pacote para flexibilizar tabelas e tabelas longas
-\usepackage{array}                  % Pacote para ampliar opções de formatos de coluna
-\usepackage{float}                  % Pacote para flutuar elementos
-    \floatstyle{plaintop}           % Força legenda das tabelas no topo
-    \restylefloat{table}            % Deixa as tabelas flutuantes
+\usepackage{booktabs}                  % Pacote para criar tabelas no estilo booktabs
+\usepackage{longtable}                 % Pacote para criar tabelas de múltiplas páginas
+\usepackage{tabu}                      % Pacote para flexibilizar tabelas
+\usepackage{array}                     % Pacote para ampliar opções de colunas
+\usepackage[normal]{threeparttable} % Pacote para tabelas com legendas e notas
+\usepackage{float}                     % Pacote para flutuar elementos
+    \floatstyle{plaintop}              % Força legenda das tabelas no topo
+    \restylefloat{table}               % Deixa as tabelas flutuantes
 
 
 % -------------------------------------
@@ -251,29 +252,33 @@
     sintomas, causando impactos mais duradouros ao indivíduo.
     \parencite{american_psychiatric_association_diagnostic_2013}.
     
-    Na literatura, percebe-se uma grande associação entre as alterações do sono
-    e os transtornos de humor.
+    Alterações nos padrões do sono são características tanto de episódios depressivos
+    quanto de episódios maníacos ou hipomaníacos.
+    As perturbações no sono podem trabalhar como um fator de risco para a conversão
+    diagnóstica do TDM para TB
+    \parencite{ritter_disturbed_2015}.
     Os problemas no sono podem inclusive predizer o início do TB e do transtorno
     depressivo maior (TDM), tal como a recorrência de episódios de humor
     \parencite{melo_sleep_2016,
     kaplan_sleep_2020,
     andrade-gonzalez_initial_2020}.
-    Essas alterações são percebidas também em pacientes em período de eutimia
-    ou remissão
+    Prejuízos relacionados aos padrões do sono são percebidos também em pacientes
+    em período de eutimia ou remissão do episódio
     \parencite{de_la_fuente-tomas_sleep_2018}.
 
+    % Verificar estudo da Amanda
     Alguns estudos relacionam as alterações do sono ao prejuízo no funcionamento
     e desempenho cognitivo de sujeitos com transtorno de humor
     \parencite{reyes_functional_2017,
     kapczinski_cognition_2016}.
     Os estudos que vêm examinando a respeito do efeito das perturbações no
     sono no funcionamento, verificam um prejuízo funcional maior em sujeitos
-    com a presença desses problemas no sono. Além disso, um pior sono pode
+    com a presença desses problemas no sono
+    \parencite{lai_familiality_2014}.
+    Além disso, um pior sono pode
     predizer um maior prejuízo no funcionamento
     \parencite{walz_daytime_2013,
-    lai_familiality_2014,
     slyepchenko_association_2019}.
-
     Tal como no funcionamento, trabalhos que analisam a relação entre
     sono e desempenho cognitivo tendem a observar um pior sono associado
     a um pior desempenho cognitivo no sujeito afetado
@@ -301,8 +306,8 @@
     tardias e prejudicadas.
     Considerando estes aspectos, o presente trabalho visa avaliar o efeito da
     insônia/hipersonia na funcionalidade e cognição de sujeitos com transtorno
-    bipolar, transtorno depressivo maior recorrente e transtorno depressivo maior
-    em remissão.
+    bipolar, além de verificar o efeito da insônia/hipersonia na conversão
+    diagnóstica de TDM para TB.
 
 \vspace{\onelineskip}
 \chapter{Objetivos}\label{sec:objetivos}
@@ -312,7 +317,8 @@
         \begin{alineas}
     
             \item Avaliar o efeito da insônia/hipersonia na funcionalidade e
-            cognição de sujeitos com transtornos de humor;
+            cognição de sujeitos com transtornos de humor, tal como na
+            conversão diagnóstica do TDM para TB;
     
         \end{alineas}
     
@@ -320,21 +326,19 @@
     
         \begin{alineas}[resume]
     
-            \item Avaliar a qualidade do sono de sujeitos que converteram para TB
-            quando comparados aos sujeitos com episódio depressivo recorrente ou
-            persistente e sujeitos que apresentaram remissão;
+            \item Avaliar a qualidade do sono geral de sujeitos que converteram para
+            TB quando comparados aos sujeitos que não converteram para o TB;
     
             \item Comparar o tempo de sono total entre sujeitos que converteram para
             TB, sujeitos com episódio depressivo recorrente ou persistente e sujeitos
             que apresentaram remissão;
     
             \item Comparar o escore de disfunções cognitivas entre sujeitos que
-            converteram para TB, sujeitos com episódio depressivo recorrente ou
-            persistente e sujeitos que apresentaram remissão;
+            converteram para TB em relação aos sujeitos que não converteram
+            para o TB;
     
-            \item Comparar a percepção subjetiva de funcionamento cognitivo entre
-            sujeitos que converteram para TB, sujeitos com episódio depressivo
-            recorrente ou persistente e sujeitos que apresentaram remissão;
+            \item Comparar a percepção subjetiva da cognição entre sujeitos que
+            converteram para TB em relação aos sujeitos que não converteram para TB;
     
             \item Avaliar o efeito da insônia/hipersonia na conversão do
             diagnóstico de TDM para TB.
@@ -575,8 +579,8 @@
         o domínio cognitivo.
         Ao observar o efeito do sono no funcionamento, um trabalho verificou
         efeitos adversos da privação de sono no funcionamento cognitivo
-        dos sujeitos.
-        \parencite{harvey_sleep_2009}
+        dos sujeitos
+        \parencite{harvey_sleep_2009}.
         Um outro estudo verificou piores escores no funcionamento global
         de pacientes bipolares que apresentaram disfunções no sono quando
         comparados aos que não apresentaram 
@@ -615,16 +619,11 @@
         saudáveis, especialmente nos domínios de memória verbal e
         funcionamento executivo
         \parencite{martinez-aran_cognitive_2004}.
-        Em contrapartida, \textcite{macqueen_cognitive_2017},
-        em sua revisão de literatura, avaliou as diferenças entre a
-        função cognitiva em sujeitos com transtorno de humor, e
-        constatou maiores prejuízos cognitivos em pacientes com
-        TDM em remissão quando comparados a sujeitos bipolares.
 
         \textcite{kanady_association_2017} avaliou a associação entre sono e
         cognição no TB, e também examinou se a manipulação terapêutica do sono
         e a melhora no quadro cognitivo estavam associadas.
-        Verificou-se uma maior variabilidade no tempo de sono total predizendo
+        Verificou uma maior variabilidade no tempo de sono total predizendo
         pior memória de trabalho e desempenho do aprendizado verbal.
         E seguindo Terapia Cognitiva Comportamental para Insônia no TB, a melhora
         no sono foi associada com uma melhora na cognição.
@@ -645,13 +644,16 @@
         das alterações do sono com início ou recorrência dos episódios de humor,
         além de verificar um possível efeito deste no funcionamento e cognição
         dos sujeitos afetados.
+        Os estudos examinados também indicam um efeito do sono no fenômeno
+        da conversão diagnóstica do transtorno depressivo maior para o transtorno
+        bipolar.
         Tendo em mente que na maioria dos estudos, as amostras dos pacientes
-        com transtornos de humor são mais tardias, podendo apresentar um impacto
-        da neuroprogressão nestes sintomas, vê-se necessários trabalhos que
-        avaliem os efeitos do sono nestes aspectos em amostras recém
-        diagnosticadas tal como o presente estudo.
+        com transtorno bipolar são mais tardias, podendo apresentar um impacto
+        da neuroprogressão nesta associação, vê-se necessários trabalhos que
+        avaliem os efeitos do sono no funcionamento e cognição em amostras recém
+        diagnosticadas.
         Para mais informações relacionadas aos artigos citados nesta revisão
-        de literatura, existe uma \nameref{sec:tabelarevisao} na seção de Anexos,
+        de literatura, verifique a \nameref{sec:tabelarevisao} na seção de Anexos,
         onde constam informações detalhadas sobre cada estudo.
 
 \vspace{\onelineskip}
@@ -672,8 +674,7 @@
             Sujeitos que buscaram atendimento no Ambulatório de Pesquisa e Extensão
             em Saúde Mental da Universidade Católica de Pelotas, com idade entre 18
             e 60 anos, que preencheram critérios para o diagnóstico de transtorno
-            depressivo maior na primeira fase do estudo, e apresentaram remissão,
-            episódio depressivo recorrente ou conversão para TB.
+            depressivo maior na primeira fase do estudo.
 
         \subsection{Amostragem} 
     
@@ -691,8 +692,7 @@
                 \item Ter entre 18 e 60 anos na primeira fase do estudo;
 
                 \item Ser diagnosticado com TDM pela equipe da pesquisa,
-                através da MINI na primeira fase, e apresentar remissão,
-                episódio depressivo recorrente ou conversão para TB na segunda fase;
+                através da MINI na primeira fase;
 
             \end{itemize}
 
@@ -710,10 +710,26 @@
 
     \section{Definição das variáveis}\label{sec:variaveis}
 
+        No presente estudo, as variáveis coletadas se referem aos dados
+        sociodemográficos, como idade e sexo.
+        A variável de insônia/hipersonia foi avaliada na primeira fase do estudo
+        através da \nameref{sec:mini}.
+        Em relação aos transtornos de humor, na primeira fase do estudo,
+        está presente o diagnóstico de transtorno depressivo maior, e na
+        segunda fase, o diagnóstico de transtorno bipolar, que caracterizou
+        a conversão diagnóstica do sujeito avaliado.
+
+        Quanto as variáveis de cognição (subjetiva e objetiva), ambas foram
+        coletadas na segunda fase do estudo, assim como a variável de funcionamento
+        global e da qualidade geral do sono.
+        Uma descrição mais detalhada das variáveis do estudo pode ser verificada
+        na tabela \ref{tab:variaveis}.
+
         \begin{table}[H]
         \resizebox{\textwidth}{!}{%
         \caption{Descrição das variáveis, instrumento utilizado para coleta,
                  classificação e tipo}
+        \label{tab:variaveis}
         \begin{tabular}{@{}llll@{}}
             \toprule
             \textbf{Variável} &
@@ -721,17 +737,17 @@
             \textbf{Classificação} &
             \textbf{Tipo de variável} 
             \\ \midrule
-            Transtorno Bipolar &
-            MINI & Sim/Não & Dicotômica
-            \\ \midrule
-            Episódio Depressivo Atual &
-            MINI & Sim/Não & Dicotômica
-            \\ \midrule
             Sexo &
             Questionário Sociodemográfico & Masculino/Feminino & Dicotômica
             \\ \midrule
             Idade &
             Questionário Sociodemográfico & Anos Inteiros & Quantitativa Discreta
+            \\ \midrule
+            Episódio Depressivo Atual &
+            MINI & Sim/Não & Dicotômica
+            \\ \midrule
+            Insônia ou Hipersonia &
+            MINI & Sim/Não & Dicotômica
             \\ \midrule
             Percepção Subjetiva da Cognição &
             COBRA & Escore total & Quantitativa Discreta
@@ -745,7 +761,7 @@
             Qualidade Geral do Sono &
             PSQI & Escore total & Quantitativa Discreta
             \\ \midrule
-            Insônia ou Hipersonia &
+            Transtorno Bipolar &
             MINI & Sim/Não & Dicotômica
             \\ \bottomrule
         \end{tabular}%
@@ -862,6 +878,7 @@
             considerando o escore total do subteste como a soma das cotações
             dos vários itens. Este escore varia de 0 a 21 pontos.
     
+            % Reformular frase do número e letra/s
             Apesar de não haver limite de tempo para o sujeito responder,
             o examinador lê cada número ou letra na taxa de um número por segundo.
             A Sequência de Números e Letras mede memória de trabalho,
@@ -883,12 +900,30 @@
     eletrônica. Para análise dos dados estatísticos serão utilizados
     \textit{scripts} escritos na linguagem de programação R, na versão 4.0.3
     \parencite{r_language}.
+    As variáveis categóricas serão descritas em frequências absolutas e relativas.
+    As variáveis numéricas terão sua distribuição testadas na curva de Gauss e serão
+    apresentadas por média e desvio padrão ou mediana e intervalos interquartis,
+    de acordo com sua distribuição.
+    Para os testes de hipóteses, para avaliar o efeito da insônia/hipersonia na
+    conversão diagnóstica de TDM para TB será utilizado teste qui-quadrado e
+    regressão de Poisson. Para avaliar o efeito da insônia/hipersonia nas medidas
+    de funcionamento e cognição (subjetiva e objetiva) será utilizado o teste T
+    de Student ou o teste Mann-Whitney.
+    A correlação entre a qualidade do sono e as medidas de funcionamento e cognição
+    serão testadas por Pearson ou Spearman, se necessário será construído um modelo
+    de análise por regressão linear para ajuste de variáveis confundidoras.
+    Serão considerados como fatores de confusão variáveis associadas a exposição
+    e ao desfecho com p menor que 0,20 na análise bruta. Por fim, serão consideradas
+    associações estatisticamente significativas nos testes de hipótese com p
+    menor que 0,05.
 
 \section{Cronograma}\label{sec:cronograma}
-
+% Aumentar o período de processamento e análise dos dados
     \begin{table}[H]
+        \caption{Cronograma do Projeto em Meses -- Junho de 2020 à Maio de 2021}
+        \begin{threeparttable}
+        \renewcommand{\TPTminimum}{\linewidth}
         \resizebox{\textwidth}{!}{%
-        \caption{Cronograma do Projeto em Meses}
         \label{tab:cronograma}
         \begin{tabular}{lcccccccccccc}  
             \toprule
@@ -897,34 +932,37 @@
             \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} &
             \textbf{11} & \textbf{12} \\
             \midrule
-            Revisão de Literatura &
+            Revisão de literatura &
             $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ &
             $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ \\
             Elaboração do projeto &
             $\bullet$ & $\bullet$ & $\bullet$ & & & &
             & & & & & \\
-            Coleta de dados &
-            & & & $\bullet$ & & &
-            & & & & & \\
-            Defesa do Projeto &
+            Qualificação do projeto &
             & & & & $\bullet$ & &
             & & & & & \\
             Processamento dos dados &
-            & & & & $\bullet$ & &
+            & & & & $\bullet$ & $\bullet$ &
             & & & & & \\
             Análise dos dados &
-            & & & & $\bullet$ & &
-            & & & & & \\
-            Redação do Artigo &
+            & & & & $\bullet$ & $\bullet$ &
+            $\bullet$ & $\bullet$ & & & & \\
+            Redação do artigo &
             & & & & & $\bullet$ &
             $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & \\
-            Defesa do Artigo &
+            Defesa do artigo &
             & & & & & &
             & & & & & $\bullet$ \\
             \bottomrule
         \end{tabular}%
         }
+            \begin{tablenotes}
+              \footnotesize
+              \item Aprovação no Comitê de Ética e a Coleta dos Dados aconteceram
+              anteriormente ao desenvolvimento da presente proposta de pesquisa.
+            \end{tablenotes}
         \fonte{Próprio Autor}
+        \end{threeparttable}
     \end{table}%
 
 \section{Orçamento}\label{sec:orcamento}
