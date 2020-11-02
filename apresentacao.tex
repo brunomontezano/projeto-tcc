@@ -44,7 +44,8 @@
 }
 \makeatletter
 
-\title{Efeitos do prejuízo no sono na funcionalidade e cognição de sujeitos com transtornos de humor}
+\title{Efeitos das alterações nos padrões de sono na conversão diagnóstica e
+       neuroprogressão de sujeitos com transtornos de humor}
 \author[Bruno Montezano]{Bruno Braga Montezano}
 \institute{Universidade Católica de Pelotas}
 
@@ -72,15 +73,37 @@
 
     \centering
     \Large
-    Avaliar o efeito da insônia/hipersonia na funcionalidade e
-    cognição de sujeitos com transtornos de humor
+    Avaliar os efeitos das alterações nos padrões de sono na conversão
+    diagnóstica e neuroprogressão de sujeitos com transtornos de humor
 
-\end{frame}
+    \end{frame}
 
 \begin{frame}
     \frametitle{Objetivos Específicos}
 
+    \Large
+    \begin{block}{Avaliar o efeito da insônia/hipersonia na conversão do
+                  diagnóstico de TDM para TB}
 
+        A presença de insônia/hipersonia se apresentará como preditor para
+        conversão de TDM para TB
+                  
+    \end{block}
+    
+\end{frame}
+
+\begin{frame}
+\frametitle{Objetivos Específicos}
+
+    \Large
+    \begin{block}{Avaliar o efeito da insônia/hipersonia no funcionamento
+                  global de sujeitos com transtornos de humor}
+
+        A insônia/hipersonia na primeira avaliação estará relacionada a um
+        maior prejuízo no funcionamento global dos sujeitos com diagnóstico
+        inicial de TB
+                  
+    \end{block}
     
 \end{frame}
 
@@ -153,7 +176,7 @@
             \item \emph{Pittsburgh Sleep Quality Index} (PSQI)\footcite{bertolazi_validation_2011}
             \item \emph{Functioning Assessment Short Test} (FAST)\footcite{cacilhas_validity_2009}
             \item \emph{Cognitive Complaints in Bipolar Disorder Rating Assessment} (COBRA)\footcite{lima_validity_2018}
-            \item Sequência de números e letras da \emph{Wechsler Adult Intelligence Scale}\footcite{wechsler_wais_2004}
+            \item Sequência de Números e Letras da \emph{Wechsler Adult Intelligence Scale}\footcite{wechsler_wais_2004}
         \end{itemize}
     \end{block}
 
@@ -165,11 +188,18 @@
     \begin{block}{Processamento e análise de dados}
         \begin{itemize}
             \item \emph{Open Data Kit Collect} na versão 1.1.7       
-            \item R 4.0.2
+            \item R 4.0.3\footfullcite{r_language}
             \begin{itemize}
-                \item Análise univariada:
-                \item Análise bivariada: 
+                \item Análise univariada: Frequências absolutas e relativas ou
+                médias e desvio padrão ou medianas e intervalos interquartis
+                \item Análise bivariada: qui-quadrado, regressão de Poisson,
+                teste T de Student, teste Mann-Whitney, correlação de Pearson
+                ou Spearman e regressão linear
             \end{itemize}
+            \item Fatores de confusão: variáveis associadas a exposição e ao
+            desfecho com p menor que 0,20 na análise bruta
+            \item Associações significativas nos testes de hipótese com valor de p
+            menor que 0,05
         \end{itemize}
     \end{block}
 
