@@ -1,45 +1,74 @@
-% -----------------------------------------------------------------------------------------
-% -----------------------------------------------------------------------------------------
+% ---------------------------------------------------------------------------------------
+% ---------------------------------------------------------------------------------------
 % Apresentação do Projeto de Pesquisa realizado para Conclusão da Graduação em Psicologia
 % Acadêmico: Bruno Braga Montezano
 % Elaborado com uso da classe de documento Beamer
-% -----------------------------------------------------------------------------------------
-% -----------------------------------------------------------------------------------------
+% ---------------------------------------------------------------------------------------
+% ---------------------------------------------------------------------------------------
+
+% ------------------------
+% Preâmbulo do Documento
+% ------------------------
 
 \documentclass{beamer}
-\usepackage[backend=biber,style=abnt,uniquename=init,giveninits,repeatfields]{biblatex} % Citações padrão ABNT
-\addbibresource{ref.bib}
-\usepackage[utf8]{inputenc} % Pacote necessário quando se utiliza pdflatex
-\usepackage[T1]{fontenc} % Pacote necessário quando se utiliza pdflatex
-\usepackage[brazil]{babel}
-\resetcounteronoverlays{exx}
-\usepackage{tikz}
-\usetikzlibrary{trees}
-\usepackage{blindtext}
-\usepackage{enumerate}
-\usepackage{longtable}
-\usepackage{parskip}
-\usepackage{color}
-\usepackage{multirow}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{fancybox}
-\usetheme{Copenhagen}
-\setbeamertemplate{frametitle}[default][center]
-\setbeamertemplate{caption}[numbered]
-\setlength{\parskip}{12pt}
-
-\setbeamertemplate{frametitle continuation}[from second]
-\setbeamertemplate{footline}[page number]
 
 \title{Efeitos das alterações nos padrões de sono na conversão diagnóstica e
        neuroprogressão de sujeitos com transtornos de humor}
+
 \author[Bruno Montezano]{Bruno Braga Montezano}
+
 \institute{Universidade Católica de Pelotas}
+
+% ---------------------------------
+% Pacotes Utilizados no Trabalho
+% ---------------------------------
+
+\usepackage[backend=biber,
+            style=abnt,
+            uniquename=init,
+            giveninits,
+            repeatfields]{biblatex}     % Citações padrão ABNT
+\addbibresource{ref.bib}                % Adicionando arquivo de bibliografia
+
+\usepackage[utf8]{inputenc}             % Suporte para codificação UTF-8
+\usepackage[T1]{fontenc}                % Suporte para codificação de fonte T1
+\usepackage[brazil]{babel}              % Seleciona português como língua do documento
+
+\resetcounteronoverlays{exx}            % Ajuste na contagem das numerações
+\usepackage{blindtext}                  % Pacote para texto sem nexo de preenchimento
+\usepackage{enumerate}                  % Pacote para enumerar com rótulos redefiníveis
+\usepackage{longtable}                  % Pacote para tabelas de múltiplas páginas
+\usepackage{parskip}                    % Pacote para indentação e quebra de parágrafo
+\usepackage{color}                      % Pacote para controle de cor no documento
+\usepackage{multirow}                   % Pacote para células tabulares entre linhas
+\usepackage{graphicx}                   % Pacote para inserir imagens e tabelas
+\usepackage{booktabs}                   % Pacote para criar tabelas no estilo booktabs
+\usepackage{fancybox}                   % Pacote para criar caixas de texto bonitas
+\usepackage{tikz}                       % Pacote para criar elementos gráficos
+\usetikzlibrary{trees}                  % Utiliza a biblioteca trees do TikZ
+
+
+% ---------------------
+% Ajustes no documento
+% ---------------------
+
+\usetheme{Copenhagen}                               % Seleção do tema da apresentação
+\setbeamertemplate{frametitle}[default][center]     % Centraliza título do frame
+\setbeamertemplate{caption}[numbered]               % Enumera as legendas
+\setbeamertemplate{footline}[page number]           % Número da página no rodapé
+\setlength{\parskip}{12pt}
+\setbeamertemplate{frametitle continuation}[from second]
+
+
+% Inserção da logo da UCPel e do PPGSC na capa do documento
 
 \titlegraphic{\includegraphics[width=2cm]{img/logoppgsc.png}\hspace*{4.75cm}%
     \includegraphics[width=2cm]{img/logoucpel.png}
 }
+
+% -----------------------
+% Início da Apresentação
+% -----------------------
 
 \begin{document}
 
