@@ -29,20 +29,8 @@
 \setbeamertemplate{caption}[numbered]
 \setlength{\parskip}{12pt}
 
-\makeatother
-\setbeamertemplate{footline}
-{
-  \leavevmode%
-  \hbox{%
-  \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-    \usebeamerfont{author in head/foot}\insertshortauthor
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.8\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-      \usebeamerfont{title in head/foot}\insertshorttitle
-  \end{beamercolorbox}}%
-  \vskip0pt%
-}
-\makeatletter
+\setbeamertemplate{frametitle continuation}[from second]
+\setbeamertemplate{footline}[page number]
 
 \title{Efeitos das alterações nos padrões de sono na conversão diagnóstica e
        neuroprogressão de sujeitos com transtornos de humor}
@@ -257,7 +245,7 @@
 
 \end{frame}
 
-\begin{frame}[shrink=20]
+\begin{frame}[allowframebreaks]
 \frametitle{Referências}
 
 \printbibliography
