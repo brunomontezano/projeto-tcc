@@ -6,6 +6,7 @@ Esse repositório contém o código em LaTeX do Projeto do Trabaho de Conclusão
 
 - O arquivo de bibliografia em extensão bib;
 - A apresentação de slides do trabalho;
+- As imagens e documentos utilizados no projeto/apresentação;
 - Os arquivos de saída em pdf.
 
 ## Dúvidas
@@ -50,7 +51,12 @@ modificando conforme minha necessidade a partir da sintaxe
 dos pacotes utilizados.
 Neste trabalho em específico, acabei utilizando longtable, tabu, etc.
 
-Você pode acessar o site Tables Generator clicando [aqui](https://www.tablesgenerator.com/).
+Você pode acessar o site Tables Generator clicando
+[aqui](https://www.tablesgenerator.com/).
+
+Porém, conforme a prática for aumentando, menos dependente de ferramentas
+que automatizam este processo serão necessárias, considerando que você vá
+ganhando autonomia e melhor compreensão da sintaxe de tabelas em LaTeX.
 
 ## Ambiente de Desenvolvimento
 
@@ -58,7 +64,6 @@ Você pode acessar o site Tables Generator clicando [aqui](https://www.tablesgen
 - Editor de texto: [Neovim](https://neovim.io/)
 - Distribuição: [TeXLive](https://tug.org/texlive/)
 - Script para compilação: [No meu repositório de configurações](https://github.com/brunomontezano/dotfiles/blob/master/.local/bin/compiler)
-
 
 ## Contato
 
