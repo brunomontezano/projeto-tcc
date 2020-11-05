@@ -1,6 +1,6 @@
 # Projeto do Trabalho de Conclusão de Psicologia - Bruno Montezano
 
-![Screenshot2020-11-0311:24:36](https://user-images.githubusercontent.com/65104127/97996926-21575100-1dc7-11eb-929e-1dbb9b7f520b.png)
+![Screenshot2020-11-0511:38:59](https://user-images.githubusercontent.com/65104127/98254774-75933a00-1f5b-11eb-9ec7-53e5c2827c26.png)
 
 Esse repositório contém o código em LaTeX do Projeto do Trabaho de Conclusão em Psicologia do acadêmico Bruno Montezano, e ainda:
 
